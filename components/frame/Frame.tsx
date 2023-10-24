@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { Photo } from '../../photos'
+import Image from "next/image";
+import { Photo } from "../../photos";
 
 export default function Frame({ photo }: { photo: Photo }) {
   return (
@@ -17,5 +17,5 @@ export default function Frame({ photo }: { photo: Photo }) {
         <p>Taken by {photo.username}</p>
       </div>
     </>
-  )
+  );
 }

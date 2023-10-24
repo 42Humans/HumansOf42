@@ -11,14 +11,16 @@ export const metadata: Metadata = {
   formatDetection: { address: false, telephone: false, email: false },
 };
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout(props: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
   return (
     <html lang="ko">
-      <body className={`text-gray-50 ${inter.className}`}>{children}</body>
+      <body className={`text-gray-50 ${inter.className}`}>
+        {props.children}
+        {props.modal}
+      </body>
     </html>
   );
 }
