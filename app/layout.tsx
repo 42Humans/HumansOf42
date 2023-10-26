@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Victor_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], style: ["normal"] });
+const inter = Victor_Mono({ subsets: ["latin"], style: ["italic"] });
 
 export const metadata: Metadata = {
   title: "Humans of 42",
@@ -17,7 +17,7 @@ export default function RootLayout(props: {
 }) {
   return (
     <html lang="ko">
-      <body className={`text-gray-50 ${inter.className}`}>
+      <body className={`text-black dark:text-gray-50 ${inter.className}`}>
         {props.children}
         {props.modal}
       </body>

@@ -13,7 +13,7 @@ const photos: Photo[] = [
     id: "1",
     name: "yeongo",
     href: "https://twitter.com/kvncnls/status/1471832344986324998",
-    username: "@kvncnls",
+    username: "@hdoo",
     imageSrc: yeongo,
   },
 ];
