@@ -1,6 +1,10 @@
 import Frame from "@/components/frame/Frame";
 import swagPhotos, { Photo } from "@/photos";
 
+export function generateStaticParams() {
+  return swagPhotos.map((photo) => ({ id: photo.id }));
+}
+
 export default function PhotoPage({
   params: { id },
 }: {

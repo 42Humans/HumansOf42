@@ -2,13 +2,16 @@ import Frame from "@/components/frame/Frame";
 import Modal from "@/components/modal/Modal";
 import swagPhotos, { Photo } from "@/photos";
 
-export default function PhotoModal({
-  params: { id: photoId },
+export function generateStaticParams() {
+  return swagPhotos.map((photo) => ({ id: photo.id }));
+}
+
+export default function PhotoModalPage({
+  params: { id },
 }: {
   params: { id: string };
 }) {
-  const photos = swagPhotos;
-  const photo: Photo = photos.find((p) => p.id === photoId)!;
+  const photo: Photo = swagPhotos.find((p) => p.id === id)!;
 
   return (
     <Modal>
