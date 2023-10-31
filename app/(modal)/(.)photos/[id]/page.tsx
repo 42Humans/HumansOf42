@@ -1,6 +1,6 @@
 import Frame from "@/components/frame/Frame";
 import Modal from "@/components/modal/Modal";
-import swagPhotos, { Photo } from "@/photos";
+import  from "@/interview";
 
 export function generateStaticParams() {
   return swagPhotos.map((photo) => ({ id: photo.id }));
