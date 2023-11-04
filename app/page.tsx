@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import swagPhotos from "@/photos";
+import { interviews } from "@/interview";
+import { photos } from "@/images";
 
 export default function Home() {
   return (
@@ -24,15 +25,14 @@ function NaviBar() {
 }
 
 function InterviewListView() {
-  const photos = swagPhotos;
   return (
     <div className="flex justify-center">
       <div className="w-fit h-full justify-items-center gap-16 grid grid-cols lg:grid-cols-2 2xl:grid-cols-3 p-8 bg-gray-50 dark:bg-black">
-        {photos.map(({ id, imageSrc, name }) => (
-          <Link key={id} href={`/photos/${id}`}>
+        {interviews.map((interview) => (
+          <Link key={interview.id} href={`/photos/${interview.id}`}>
             <Image
-              alt={`interview for ${name}`}
-              src={imageSrc}
+              alt={`interview for ${interview.interviewee}`}
+              src={photos[interview.id].main}
               height={400}
               width={336}
               className="w-full object-cover aspect-auto"

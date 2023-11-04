@@ -1,8 +1,7 @@
 import Frame from "@/components/frame/Frame";
-import swagPhotos, { Photo } from "@/photos";
-
+import { interviews } from "@/interview";
 export function generateStaticParams() {
-  return swagPhotos.map((photo) => ({ id: photo.id }));
+  return interviews.map((photo) => ({ id: photo.id.toString }));
 }
 
 export default function PhotoPage({
@@ -10,13 +9,11 @@ export default function PhotoPage({
 }: {
   params: { id: string };
 }) {
-  const photo: Photo = swagPhotos.find((p) => p.id === id)!;
+  const interview = interviews.find((i) => i.id === Number(id));
 
   return (
     <div className="container mx-auto my-10">
-      <div className="w-1/2 mx-auto border border-gray-700">
-        <Frame photo={photo} />
-      </div>
+      <div className="w-1/2 mx-auto border border-gray-700"></div>
     </div>
   );
 }

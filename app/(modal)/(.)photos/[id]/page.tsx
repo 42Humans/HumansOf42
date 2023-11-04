@@ -1,9 +1,9 @@
 import Frame from "@/components/frame/Frame";
 import Modal from "@/components/modal/Modal";
-import  from "@/interview";
+import { interviews } from "@/interview";
 
 export function generateStaticParams() {
-  return swagPhotos.map((photo) => ({ id: photo.id }));
+  return interviews.map((photo) => ({ id: photo.id.toString }));
 }
 
 export default function PhotoModalPage({
@@ -11,11 +11,15 @@ export default function PhotoModalPage({
 }: {
   params: { id: string };
 }) {
-  const photo: Photo = swagPhotos.find((p) => p.id === id)!;
+  const interview = interviews.find((i) => i.id === Number(id));
+
+  if (interview === undefined) {
+    return <></>;
+  }
 
   return (
     <Modal>
-      <Frame photo={photo} />
+      <div></div>
     </Modal>
   );
 }
