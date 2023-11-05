@@ -5,12 +5,12 @@ import { interviews } from "@/interview";
 import { interview_contents } from "@/interview_json";
 import Image from "next/image";
 
-export function generateStaticParams() {
-  return interviews.map((interview) => {
-    const id_string = interview.id.toString();
-    return { id: id_string };
-  });
-}
+// export function generateStaticParams() {
+//   return interviews.map((interview) => {
+//     const id_string = interview.id.toString();
+//     return { id: id_string };
+//   });
+// }
 
 export default function InterviewPage({
   params: { id },
