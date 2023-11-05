@@ -24,10 +24,10 @@ function InterviewListView() {
               className="w-full object-cover aspect-square"
             />
             <Link
-              href={`/photos/${interview.id}`}
+              href={`/interviews/${interview.id}`}
               className="bg-transparent group transition-colors absolute hover:bg-black/30 inset-0 hover:flex justify-center items-center"
             >
-              <span className="text-transparent group-hover:text-white font-bold text-lg">
+              <span className="text-transparent group-hover:text-white font-black text-lg">
                 {interview.interviewee}
               </span>
             </Link>

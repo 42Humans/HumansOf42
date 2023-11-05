@@ -3,7 +3,7 @@ import { Victor_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-const inter = Victor_Mono({ subsets: ["latin"], style: ["italic"] });
+const inter = Victor_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Humans of 42",
@@ -30,7 +30,7 @@ export default function RootLayout(props: {
 }) {
   return (
     <html lang="ko">
-      <body className={`text-black dark:text-gray-50 ${inter.className}`}>
+      <body className={`text-gray-800 dark:text-gray-50 ${inter.className}`}>
         <NaviBar />
         {props.children}
         {props.modal}
