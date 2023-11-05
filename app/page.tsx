@@ -1,34 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
-import swagPhotos from "@/photos";
+import { interviews } from "@/interview";
+import { photos } from "@/images";
 
 export default function Home() {
-  const photos = swagPhotos;
-
   return (
-    <main className="relative flex flex-col bg-white w-full h-fit">
-      <div className="w-full flex flex-row bg-gray-800">
-        <Link className="p-4" href={"/"}>
-          <span className="rounded p-1 outline-none hover:outline hover:outline-white/30 text-white">
-            Humans of 42
-          </span>
-        </Link>
-      </div>
-      <div className="flex justify-center bg-gray-100 dark:bg-black/90">
-        <div className="w-fit h-full justify-items-center gap-16 grid grid-cols lg:grid-cols-2 2xl:grid-cols-3 p-8 bg-gray-50 dark:bg-black">
-          {photos.map(({ id, imageSrc }) => (
-            <Link key={id} href={`/photos/${id}`}>
-              <Image
-                alt=""
-                src={imageSrc}
-                height={400}
-                width={336}
-                className="w-full object-cover aspect-auto"
-              />
-            </Link>
-          ))}
-        </div>
-      </div>
+    <main className="relative flex flex-col bg-gray-100 dark:bg-black/90 w-full h-fit">
+      <InterviewListView />
     </main>
+  );
+}
+
+function InterviewListView() {
+  return (
+    <div className="flex justify-center">
+      <div className="relative w-fit h-fit justify-items-center gap-16 grid grid-cols lg:grid-cols-2 2xl:grid-cols-3 p-8 bg-gray-50 dark:bg-gray-900/30">
+        {interviews.map((interview) => (
+          <div className="relative" key={interview.id}>
+            <Image
+              alt={`interview for ${interview.interviewee}`}
+              src={photos.find((photo) => photo.id === interview.id)?.main!}
+              width={336}
+              className="w-full object-cover aspect-square"
+            />
+            <Link
+              href={`/photos/${interview.id}`}
+              className="bg-transparent group transition-colors absolute hover:bg-black/30 inset-0 hover:flex justify-center items-center"
+            >
+              <span className="text-transparent group-hover:text-white font-bold text-lg">
+                {interview.interviewee}
+              </span>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
