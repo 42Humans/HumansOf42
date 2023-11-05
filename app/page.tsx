@@ -22,6 +22,8 @@ function InterviewListView() {
               src={photos.find((photo) => photo.id === interview.id)?.main!}
               width={336}
               className="w-full object-cover aspect-square"
+              placeholder="blur"
+              priority={true}
             />
             <Link
               href={`/interviews/${interview.id}`}
