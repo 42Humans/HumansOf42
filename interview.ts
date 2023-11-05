@@ -242,7 +242,7 @@ export const interviews: Interview[] = [
     id: 23,
     title: "제 동력원은 사람이에요",
     subtitle: "yomoon의 이야기",
-    date: new Date(""),
+    date: new Date("2021-07-27"),
     interviewer: [],
     interviewee: [],
     photographer: [""],
