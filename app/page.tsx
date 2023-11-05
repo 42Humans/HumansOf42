@@ -22,13 +22,15 @@ function InterviewListView() {
               src={photos.find((photo) => photo.id === interview.id)?.main!}
               width={336}
               className="w-full object-cover aspect-square"
+              placeholder="blur"
+              priority={true}
             />
             <Link
               href={`/interviews/${interview.id}`}
               className="bg-transparent group transition-colors absolute hover:bg-black/30 inset-0 hover:flex justify-center items-center"
             >
               <span className="text-transparent group-hover:text-white font-black text-lg">
-                {interview.interviewee}
+                {interview.interviewee.join(", ")}
               </span>
             </Link>
           </div>

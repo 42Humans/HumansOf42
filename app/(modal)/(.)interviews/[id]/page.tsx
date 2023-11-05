@@ -46,6 +46,9 @@ export default function InterviewModalPage({
             alt={`Photo of ${interview_meta.interviewee}`}
             src={photo.main}
             className="py-16 w-full object-cover aspect-auto col-span-2"
+            quality={100}
+            placeholder="blur"
+            priority={true}
           />
         )}
         {interview.content.map((paragraph) => {
