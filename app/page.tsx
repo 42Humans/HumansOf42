@@ -28,7 +28,7 @@ function InterviewListView() {
               className="bg-transparent group transition-colors absolute hover:bg-black/30 inset-0 hover:flex justify-center items-center"
             >
               <span className="text-transparent group-hover:text-white font-black text-lg">
-                {interview.interviewee}
+                {interview.interviewee.join(", ")}
               </span>
             </Link>
           </div>
