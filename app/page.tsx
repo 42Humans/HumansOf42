@@ -14,7 +14,7 @@ export default function Home() {
 function InterviewListView() {
   return (
     <div className="flex justify-center">
-      <div className="relative w-fit h-fit justify-items-center gap-16 grid grid-cols lg:grid-cols-2 2xl:grid-cols-3 p-8 bg-gray-50 dark:bg-gray-900/30">
+      <div className="relative w-fit h-fit justify-items-center gap-16 grid grid-cols lg:grid-cols-2 2xl:grid-cols-3 p-8 bg-gray-50/30 dark:bg-gray-900/30">
         {interviews.map((interview) => (
           <div className="relative" key={interview.id}>
             <Image
