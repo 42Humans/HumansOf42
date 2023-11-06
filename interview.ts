@@ -10,9 +10,11 @@ export type Interview = {
 };
 
 export type Paragraph = {
-  speaker?: string;
+  speaker?: string | undefined;
   text?: string | undefined;
-  imagePath?: string | undefined;
+  imageDescription?: string | undefined;
+  sub?: string | undefined;
+  question?: string | undefined;
 };
 
 export const interviews: Interview[] = [
@@ -389,7 +391,7 @@ export const interviews: Interview[] = [
     content: [],
   },
   {
-    id: 39,
+    id: 38,
     title: "중요한 건 일을 해나갈 수 있는 명분이에요",
     subtitle: "gulee의 이야기",
     date: new Date("2022-05-02"),
@@ -399,7 +401,7 @@ export const interviews: Interview[] = [
     content: [],
   },
   {
-    id: 40,
+    id: 39,
     title: "도전할 자신감은 도전에서 나온다",
     subtitle: "donghyuk, nheo의 이야기",
     date: new Date("2022-05-06"),
@@ -409,7 +411,7 @@ export const interviews: Interview[] = [
     content: [],
   },
   {
-    id: 41,
+    id: 40,
     title: "협력, 소통을 배우는 시간",
     subtitle: "jihyukim, jabae의 이야기",
     date: new Date("2022-06-03"),
@@ -419,7 +421,7 @@ export const interviews: Interview[] = [
     content: [],
   },
   {
-    id: 42,
+    id: 41,
     title: "사람들이 다 치유해준 것 같아요",
     subtitle: "jiychoi, junmkang의 이야기",
     date: new Date("2022-07-19"),
@@ -429,7 +431,7 @@ export const interviews: Interview[] = [
     content: [],
   },
   {
-    id: 43,
+    id: 42,
     title: "Life is 42",
     subtitle: "kristine의 이야기",
     date: new Date("2022-09-13"),
@@ -439,7 +441,7 @@ export const interviews: Interview[] = [
     content: [],
   },
   {
-    id: 44,
+    id: 43,
     title: "yego에서 yeogo, 그리고 yeongo로",
     subtitle: "yeongo의 이야기",
     date: new Date("2022-10-25"),

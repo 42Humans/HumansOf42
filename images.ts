@@ -35,12 +35,12 @@ import main34 from "@/public/picture/34/main.jpg";
 import main35 from "@/public/picture/35/main.jpg";
 import main36 from "@/public/picture/36/main.jpg";
 import main37 from "@/public/picture/37/main.jpg";
+import main38 from "@/public/picture/38/main.jpg";
 import main39 from "@/public/picture/39/main.jpg";
 import main40 from "@/public/picture/40/main.jpg";
 import main41 from "@/public/picture/41/main.jpg";
 import main42 from "@/public/picture/42/main.jpg";
 import main43 from "@/public/picture/43/main.jpg";
-import main44 from "@/public/picture/44/main.jpg";
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
 import sub4 from "@/public/picture/4/sub1.jpg";
@@ -77,12 +77,12 @@ import sub34 from "@/public/picture/34/sub1.jpg";
 import sub35 from "@/public/picture/35/sub1.jpg";
 import sub36 from "@/public/picture/36/sub1.jpg";
 import sub37 from "@/public/picture/37/sub1.jpg";
+import sub38 from "@/public/picture/38/sub1.jpg";
 import sub39 from "@/public/picture/39/sub1.jpg";
 import sub40 from "@/public/picture/40/sub1.jpg";
 import sub41 from "@/public/picture/41/sub1.jpg";
 import sub42 from "@/public/picture/42/sub1.jpg";
 import sub43 from "@/public/picture/43/sub1.jpg";
-import sub44 from "@/public/picture/44/sub1.jpg";
 import { StaticImageData } from "next/image";
 
 type Photo = {
@@ -129,10 +129,10 @@ export const photos: Photo[] = [
   { id: 35, main: main35, sub: [sub35] },
   { id: 36, main: main36, sub: [sub36] },
   { id: 37, main: main37, sub: [sub37] },
+  { id: 38, main: main38, sub: [sub38] },
   { id: 39, main: main39, sub: [sub39] },
   { id: 40, main: main40, sub: [sub40] },
   { id: 41, main: main41, sub: [sub41] },
   { id: 42, main: main42, sub: [sub42] },
   { id: 43, main: main43, sub: [sub43] },
-  { id: 44, main: main44, sub: [sub44] },
 ];
