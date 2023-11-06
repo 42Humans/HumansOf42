@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo42 from "@/public/42_logo.svg";
 
-const inter = Victor_Mono({ subsets: ["latin"], weight: "400" });
+const victor = Victor_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Humans of 42",
@@ -27,18 +27,14 @@ function NaviBar() {
   );
 }
 
-export default function RootLayout(props: {
-  children: React.ReactNode;
-  modal: React.ReactNode;
-}) {
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${victor.className}`}>
       <body
-        className={`bg-white/90 dark:bg-black/90 text-gray-800 dark:text-gray-50/90 ${inter.className}`}
+        className={`bg-white/90 dark:bg-black/90 flex flex-col justify-center items-center text-gray-800 dark:text-gray-50/90 `}
       >
         <NaviBar />
-        {props.children}
-        {props.modal}
+        <div className="mx-8 md:mx-16 xl:mx-32 relative">{props.children}</div>
       </body>
     </html>
   );

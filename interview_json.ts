@@ -35,12 +35,12 @@ import interview34 from "@/public/interview/md/34.json";
 import interview35 from "@/public/interview/md/35.json";
 import interview36 from "@/public/interview/md/36.json";
 import interview37 from "@/public/interview/md/37.json";
+import interview38 from "@/public/interview/md/38.json";
 import interview39 from "@/public/interview/md/39.json";
 import interview40 from "@/public/interview/md/40.json";
 import interview41 from "@/public/interview/md/41.json";
 import interview42 from "@/public/interview/md/42.json";
 import interview43 from "@/public/interview/md/43.json";
-import interview44 from "@/public/interview/md/44.json";
 import { Paragraph } from "./interview";
 
 type Content = {
@@ -86,10 +86,10 @@ export const interview_contents: Content[] = [
   { id: 35, content: interview35 },
   { id: 36, content: interview36 },
   { id: 37, content: interview37 },
+  { id: 38, content: interview38 },
   { id: 39, content: interview39 },
   { id: 40, content: interview40 },
   { id: 41, content: interview41 },
   { id: 42, content: interview42 },
   { id: 43, content: interview43 },
-  { id: 44, content: interview44 },
 ];
