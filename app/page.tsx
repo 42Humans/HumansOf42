@@ -25,6 +25,7 @@ function InterviewListView() {
             className="w-full object-cover aspect-square"
             placeholder="blur"
             priority={true}
+            quality={42}
           />
           <Link
             href={`/interviews/${interview.id}`}
