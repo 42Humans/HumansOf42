@@ -38,6 +38,7 @@ export default function InterviewPage({
   ) {
     return <>Page not found</>;
   }
+  console.log(photo.sub);
 
   const intId = parseInt(id);
   if (intId < 0 && intId > interviews.length) {
@@ -100,14 +101,20 @@ export default function InterviewPage({
               </p>
             );
           } else if (paragraph.imageDescription !== undefined) {
-            return (
-              <Image
-                key={index}
-                src={photo.sub?.shift()!}
-                className={`py-8 lg:px-12 2xl:px-36 ${className}`}
-                alt={`Photo of ${paragraph.imageDescription}`}
-              />
-            );
+            console.log("before shift, ", photo.sub);
+            const image = photo.sub.shift();
+            console.log("after shift, ", image);
+            if (image !== undefined) {
+              return (
+                <Image
+                  key={index}
+                  src={image}
+                  className={`py-8 lg:px-12 2xl:px-36 ${className}`}
+                  alt={`Photo of ${paragraph.imageDescription}`}
+                  priority={true}
+                />
+              );
+            }
           }
         })}
       </div>
