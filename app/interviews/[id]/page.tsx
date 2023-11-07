@@ -5,8 +5,7 @@ import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return interviews.map((interview) => {
-    const id_string = interview.id.toString();
-    return { id: id_string };
+    return { id: interview.id.toString() };
   });
 }
 
@@ -39,6 +38,7 @@ export default function InterviewPage({
   const nextId = intId + 1;
   const prevId = intId - 1;
   const subphotos = interview_meta.photos.sub;
+  console.log("-----------id------------: ", id);
   if (
     subphotos.length !== 0 &&
     subphotos.every((value) => value === undefined)
