@@ -34,6 +34,9 @@ export default function InterviewPage({
   if (intId < 0 && intId > interviews.length) {
     throw notFound();
   }
+  const imageLoader = ({ src }: { src: string }) => {
+    return `@/public/picture/${id}/${src}.webp`;
+  };
 
   const nextId = intId + 1;
   const prevId = intId - 1;
@@ -106,15 +109,18 @@ export default function InterviewPage({
           }
           console.log("image");
           if (paragraph.imageDescription !== undefined) {
+            console.log(interview_meta.photos.sub.length);
             const image = interview_meta.photos.sub.shift()!;
             console.log(image);
             return (
               <Image
                 key={index}
-                src={image}
+                src={paragraph.imageDescription}
                 className={`py-8 lg:px-12 2xl:px-36 ${className}`}
                 alt={`Photo of ${interview_meta.interviewee}`}
+                quality={100}
                 priority={true}
+                loader={imageLoader}
               />
             );
           }

@@ -5,13 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import logo42 from "@/public/42_logo.svg";
 
-const victor = Victor_Mono({ subsets: ["latin"], weight: "400" });
+const victor = Victor_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  style: "italic",
+});
 
 export const metadata: Metadata = {
   title: "Humans of 42",
   description: "Interviews with people around 42 Seoul",
-  viewport: { width: "device-width", initialScale: 1 },
-  formatDetection: { address: false, telephone: false, email: false },
 };
 
 function NaviBar() {
