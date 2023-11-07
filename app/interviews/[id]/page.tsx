@@ -113,7 +113,7 @@ export default function InterviewPage({
                 key={index}
                 src={image}
                 className={`py-8 lg:px-12 2xl:px-36 ${className}`}
-                alt={`Photo of ${paragraph.imageDescription}`}
+                alt={`Photo of ${interview_meta.interviewee}`}
                 priority={true}
               />
             );
@@ -124,7 +124,9 @@ export default function InterviewPage({
       <StaffNameBox>
         interviewer {interview_meta.interviewer.join(", ")}
       </StaffNameBox>
-      <StaffNameBox>photographer {interview_meta.photographer}</StaffNameBox>
+      <StaffNameBox>
+        photographer {interview_meta.photographer.join(", ")}
+      </StaffNameBox>
       <div className="flex flex-row gap-2 w-10/12 justify-between pt-16">
         <Link
           className={`${prevId === 0 && "invisible"}`}
