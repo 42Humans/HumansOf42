@@ -43,10 +43,12 @@ import main42 from "@/public/picture/42/main.webp";
 import main43 from "@/public/picture/43/main.webp";
 import sub1 from "@/public/picture/1/sub1.webp";
 import sub2 from "@/public/picture/2/sub1.webp";
+import sub3 from "@/public/picture/3/sub1.webp";
 import sub4 from "@/public/picture/4/sub1.webp";
 import sub5 from "@/public/picture/5/sub1.webp";
 import sub6 from "@/public/picture/6/sub1.webp";
 import sub7 from "@/public/picture/7/sub1.webp";
+import sub7_2 from "@/public/picture/7/sub2.webp";
 import sub8 from "@/public/picture/8/sub1.webp";
 import sub9 from "@/public/picture/9/sub1.webp";
 import sub11 from "@/public/picture/11/sub1.webp";
@@ -185,7 +187,7 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["kyukim"],
     photographer: ["jwon"],
-    photos: { main: main3, sub: [] },
+    photos: { main: main3, sub: [sub3] },
     content: interview3,
   },
   {
@@ -229,7 +231,7 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["mseo", "seohchoi"],
     photographer: ["jwon", "yeslee"],
-    photos: { main: main7, sub: [sub7] },
+    photos: { main: main7, sub: [sub7, sub7_2] },
     content: interview7,
   },
   {

@@ -1,6 +1,7 @@
 import { interviews } from "@/interview";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return interviews.map((interview) => {
@@ -28,16 +29,22 @@ export default function InterviewPage({
   const interview_meta = interviews.find((i) => i.id === Number(id));
 
   if (interview_meta === undefined) {
-    return <>Page not found</>;
+    throw notFound();
   }
   const intId = parseInt(id);
   if (intId < 0 && intId > interviews.length) {
-    return <>Page not found</>;
+    throw notFound();
   }
 
   const nextId = intId + 1;
   const prevId = intId - 1;
-
+  const subphotos = interview_meta.photos.sub;
+  if (
+    subphotos.length !== 0 &&
+    subphotos.every((value) => value === undefined)
+  ) {
+    throw notFound();
+  }
   return (
     <div className="container lg:px-32 2xl:px-40 my-10 flex justify-center items-center flex-col">
       <h1 className="py-3 text-2xl font-bold flex justify-center w-full">
