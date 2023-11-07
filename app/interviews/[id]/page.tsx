@@ -70,38 +70,44 @@ export default function InterviewPage({
 
       <div className="flex flex-col justify-start">
         {interview.content.map((paragraph, index) => {
+          const className = paragraph.className ?? "";
+
           if (paragraph.text !== undefined) {
             return (
-              <p className="font-sans px-4 pb-3" key={index}>
+              <p className={`font-sans px-4 pb-3 ${className}`} key={index}>
                 {paragraph.text}
               </p>
             );
           } else if (paragraph.speaker !== undefined) {
             return (
               <p
-                className="w-full flex italic pb-0.5 pt-2 justify-start text-gray-300/70"
+                className={`w-full flex italic pb-0.5 pt-2 justify-start text-gray-300/70 ${className}`}
                 key={index}
               >
                 {paragraph.speaker}
               </p>
             );
           } else if (paragraph.question !== undefined) {
-            return <div key={index}>{paragraph.question}</div>;
+            return (
+              <p className={`${className}`} key={index}>
+                {paragraph.question}
+              </p>
+            );
           } else if (paragraph.sub !== undefined) {
-            return <div key={index}>{paragraph.sub}</div>;
+            return (
+              <p className={`${className}`} key={index}>
+                {paragraph.sub}
+              </p>
+            );
           } else if (paragraph.imageDescription !== undefined) {
-            if (photo.sub !== undefined && photo.sub.length !== 0) {
-              return (
-                <Image
-                  key={index}
-                  src={photo.sub.shift()!}
-                  className="py-8 lg:px-12 2xl:px-36"
-                  alt={`Photo of ${paragraph.imageDescription}`}
-                  placeholder="blur"
-                  priority={true}
-                />
-              );
-            }
+            return (
+              <Image
+                key={index}
+                src={photo.sub?.shift()!}
+                className={`py-8 lg:px-12 2xl:px-36 ${className}`}
+                alt={`Photo of ${paragraph.imageDescription}`}
+              />
+            );
           }
         })}
       </div>

@@ -22,10 +22,10 @@ function InterviewListView() {
             alt={`interview for ${interview.interviewee}`}
             src={photos.find((photo) => photo.id === interview.id)?.main!}
             width={336}
+            height={336}
             className="w-full object-cover aspect-square"
             placeholder="blur"
             priority={true}
-            quality={42}
           />
           <Link
             href={`/interviews/${interview.id}`}

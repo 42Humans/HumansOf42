@@ -15,6 +15,7 @@ export type Paragraph = {
   imageDescription?: string | undefined;
   sub?: string | undefined;
   question?: string | undefined;
+  className?: string | undefined;
 };
 
 export const interviews: Interview[] = [
