@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { interviews } from "@/interview";
-import { photos } from "@/images";
 
 export default function Home() {
   return (
@@ -20,7 +19,7 @@ function InterviewListView() {
         <div className="relative" key={interview.id}>
           <Image
             alt={`interview for ${interview.interviewee}`}
-            src={photos.find((photo) => photo.id === interview.id)?.main!}
+            src={interview.photos.main}
             width={336}
             height={336}
             className="w-full object-cover aspect-square"

@@ -1,3 +1,138 @@
+import main1 from "@/public/picture/1/main.webp";
+import main2 from "@/public/picture/2/main.webp";
+import main3 from "@/public/picture/3/main.webp";
+import main4 from "@/public/picture/4/main.webp";
+import main5 from "@/public/picture/5/main.webp";
+import main6 from "@/public/picture/6/main.webp";
+import main7 from "@/public/picture/7/main.webp";
+import main8 from "@/public/picture/8/main.webp";
+import main9 from "@/public/picture/9/main.webp";
+import main10 from "@/public/picture/10/main.webp";
+import main11 from "@/public/picture/11/main.webp";
+import main12 from "@/public/picture/12/main.webp";
+import main13 from "@/public/picture/13/main.webp";
+import main14 from "@/public/picture/14/main.webp";
+import main15 from "@/public/picture/15/main.webp";
+import main16 from "@/public/picture/16/main.webp";
+import main17 from "@/public/picture/17/main.webp";
+import main18 from "@/public/picture/18/main.webp";
+import main19 from "@/public/picture/19/main.webp";
+import main20 from "@/public/picture/19/main2.webp";
+import main21 from "@/public/picture/21/main.webp";
+import main22 from "@/public/picture/22/main.webp";
+import main23 from "@/public/picture/23/main.webp";
+import main24 from "@/public/picture/24/main.webp";
+import main25 from "@/public/picture/25/main.webp";
+import main26 from "@/public/picture/26/main1.webp";
+import main27 from "@/public/picture/26/2main.webp";
+import main28 from "@/public/picture/28/main.jpeg";
+import main29 from "@/public/picture/29/main.webp";
+import main30 from "@/public/picture/30/main.webp";
+import main31 from "@/public/picture/31/main.webp";
+import main32 from "@/public/picture/32/main.webp";
+import main33 from "@/public/picture/33/main.webp";
+import main34 from "@/public/picture/34/main.webp";
+import main35 from "@/public/picture/35/main.webp";
+import main36 from "@/public/picture/36/main.webp";
+import main37 from "@/public/picture/37/main.webp";
+import main38 from "@/public/picture/38/main.webp";
+import main39 from "@/public/picture/39/main.webp";
+import main40 from "@/public/picture/40/main.webp";
+import main41 from "@/public/picture/41/main.webp";
+import main42 from "@/public/picture/42/main.webp";
+import main43 from "@/public/picture/43/main.webp";
+import sub1 from "@/public/picture/1/sub1.webp";
+import sub2 from "@/public/picture/2/sub1.webp";
+import sub4 from "@/public/picture/4/sub1.webp";
+import sub5 from "@/public/picture/5/sub1.webp";
+import sub6 from "@/public/picture/6/sub1.webp";
+import sub7 from "@/public/picture/7/sub1.webp";
+import sub8 from "@/public/picture/8/sub1.webp";
+import sub9 from "@/public/picture/9/sub1.webp";
+import sub11 from "@/public/picture/11/sub1.webp";
+import sub12 from "@/public/picture/12/sub1.webp";
+import sub13 from "@/public/picture/13/sub1.webp";
+import sub14 from "@/public/picture/14/sub1.webp";
+import sub15 from "@/public/picture/15/sub1.webp";
+import sub16 from "@/public/picture/16/sub1.webp";
+import sub17 from "@/public/picture/17/sub1.webp";
+import sub18 from "@/public/picture/18/sub1.webp";
+import sub20 from "@/public/picture/19/2sub1.webp";
+import sub21 from "@/public/picture/21/sub1.webp";
+import sub22 from "@/public/picture/22/sub1.webp";
+import sub23 from "@/public/picture/23/sub1.webp";
+import sub24 from "@/public/picture/24/sub1.webp";
+import sub25 from "@/public/picture/25/sub1.webp";
+import sub26 from "@/public/picture/26/1sub1.webp";
+import sub26_2 from "@/public/picture/26/1sub2.webp";
+import sub27 from "@/public/picture/26/2sub1.webp";
+import sub27_2 from "@/public/picture/26/2sub2.webp";
+import sub27_3 from "@/public/picture/26/2sub3.webp";
+import sub28 from "@/public/picture/28/sub1.jpeg";
+import sub29 from "@/public/picture/29/sub1.webp";
+import sub30 from "@/public/picture/30/sub1.jpeg";
+import sub31 from "@/public/picture/31/sub1.webp";
+import sub32 from "@/public/picture/32/sub1.webp";
+import sub34 from "@/public/picture/34/sub1.webp";
+import sub35 from "@/public/picture/35/sub1.webp";
+import sub36 from "@/public/picture/36/sub1.webp";
+import sub37 from "@/public/picture/37/sub1.webp";
+import sub38 from "@/public/picture/38/sub1.webp";
+import sub39 from "@/public/picture/39/sub1.webp";
+import sub40 from "@/public/picture/40/sub1.webp";
+import sub41 from "@/public/picture/41/sub1.webp";
+import sub42 from "@/public/picture/42/sub1.webp";
+import sub43 from "@/public/picture/43/sub1.webp";
+import interview1 from "@/public/interview/md/1.json";
+import interview2 from "@/public/interview/md/2.json";
+import interview3 from "@/public/interview/md/3.json";
+import interview4 from "@/public/interview/md/4.json";
+import interview5 from "@/public/interview/md/5.json";
+import interview6 from "@/public/interview/md/6.json";
+import interview7 from "@/public/interview/md/7.json";
+import interview8 from "@/public/interview/md/8.json";
+import interview9 from "@/public/interview/md/9.json";
+import interview10 from "@/public/interview/md/10.json";
+import interview11 from "@/public/interview/md/11.json";
+import interview12 from "@/public/interview/md/12.json";
+import interview13 from "@/public/interview/md/13.json";
+import interview14 from "@/public/interview/md/14.json";
+import interview15 from "@/public/interview/md/15.json";
+import interview16 from "@/public/interview/md/16.json";
+import interview17 from "@/public/interview/md/17.json";
+import interview18 from "@/public/interview/md/18.json";
+import interview19 from "@/public/interview/md/19.json";
+import interview20 from "@/public/interview/md/20.json";
+import interview21 from "@/public/interview/md/21.json";
+import interview22 from "@/public/interview/md/22.json";
+import interview23 from "@/public/interview/md/23.json";
+import interview24 from "@/public/interview/md/24.json";
+import interview25 from "@/public/interview/md/25.json";
+import interview26 from "@/public/interview/md/26.json";
+import interview27 from "@/public/interview/md/27.json";
+import interview28 from "@/public/interview/md/28.json";
+import interview29 from "@/public/interview/md/29.json";
+import interview30 from "@/public/interview/md/30.json";
+import interview31 from "@/public/interview/md/31.json";
+import interview32 from "@/public/interview/md/32.json";
+import interview33 from "@/public/interview/md/33.json";
+import interview34 from "@/public/interview/md/34.json";
+import interview35 from "@/public/interview/md/35.json";
+import interview36 from "@/public/interview/md/36.json";
+import interview37 from "@/public/interview/md/37.json";
+import interview38 from "@/public/interview/md/38.json";
+import interview39 from "@/public/interview/md/39.json";
+import interview40 from "@/public/interview/md/40.json";
+import interview41 from "@/public/interview/md/41.json";
+import interview42 from "@/public/interview/md/42.json";
+import interview43 from "@/public/interview/md/43.json";
+import { StaticImageData } from "next/image";
+
+type StaticPhoto = {
+  main: StaticImageData;
+  sub: StaticImageData[];
+};
+
 export type Interview = {
   id: number;
   title: string;
@@ -6,6 +141,7 @@ export type Interview = {
   photographer: string[];
   interviewer: string[];
   interviewee: string[];
+  photos: StaticPhoto;
   content: Paragraph[];
 };
 
@@ -27,7 +163,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["doby"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main1, sub: [sub1] },
+    content: interview1,
   },
   {
     id: 2,
@@ -37,7 +174,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["mki"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main2, sub: [sub2] },
+    content: interview2,
   },
   {
     id: 3,
@@ -47,7 +185,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["kyukim"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main3, sub: [] },
+    content: interview3,
   },
   {
     id: 4,
@@ -57,7 +196,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["hseo"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main4, sub: [sub4] },
+    content: interview4,
   },
   {
     id: 5,
@@ -67,7 +207,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["soooh", "inyang"],
     photographer: ["jwon", "yeslee"],
-    content: [],
+    photos: { main: main5, sub: [sub5] },
+    content: interview5,
   },
   {
     id: 6,
@@ -77,7 +218,8 @@ export const interviews: Interview[] = [
     interviewer: ["iwoo"],
     interviewee: ["ryukim"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main6, sub: [sub6] },
+    content: interview6,
   },
   {
     id: 7,
@@ -87,7 +229,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["mseo", "seohchoi"],
     photographer: ["jwon", "yeslee"],
-    content: [],
+    photos: { main: main7, sub: [sub7] },
+    content: interview7,
   },
   {
     id: 8,
@@ -97,7 +240,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["amin"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main8, sub: [sub8] },
+    content: interview8,
   },
   {
     id: 9,
@@ -107,7 +251,8 @@ export const interviews: Interview[] = [
     interviewer: ["iwoo"],
     interviewee: ["sunpark"],
     photographer: ["yeslee"],
-    content: [],
+    photos: { main: main9, sub: [sub9] },
+    content: interview9,
   },
   {
     id: 10,
@@ -117,7 +262,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["jseol"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main10, sub: [] },
+    content: interview10,
   },
   {
     id: 11,
@@ -127,7 +273,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["jekim"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main11, sub: [sub11] },
+    content: interview11,
   },
   {
     id: 12,
@@ -137,7 +284,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["STARK"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main12, sub: [sub12] },
+    content: interview12,
   },
   {
     id: 13,
@@ -147,7 +295,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["jaeskim"],
     photographer: ["jaewpark", "jwon"],
-    content: [],
+    photos: { main: main13, sub: [sub13] },
+    content: interview13,
   },
   {
     id: 14,
@@ -157,7 +306,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["hyeonski"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main14, sub: [sub14] },
+    content: interview14,
   },
   {
     id: 15,
@@ -167,7 +317,8 @@ export const interviews: Interview[] = [
     interviewer: ["yeonwlee", "myungkim"],
     interviewee: ["hyeyoo"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main15, sub: [sub15] },
+    content: interview15,
   },
   {
     id: 16,
@@ -177,7 +328,8 @@ export const interviews: Interview[] = [
     interviewer: ["hmoon"],
     interviewee: ["gshim"],
     photographer: ["jaewpark", "hmoon"],
-    content: [],
+    photos: { main: main16, sub: [sub16] },
+    content: interview16,
   },
   {
     id: 17,
@@ -187,7 +339,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi", "yeonwlee", "myungkim"],
     interviewee: ["eunhkim"],
     photographer: ["jwon", "jaewpark"],
-    content: [],
+    photos: { main: main17, sub: [sub17] },
+    content: interview17,
   },
   {
     id: 18,
@@ -197,7 +350,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["hyekim"],
     photographer: ["jaewpark"],
-    content: [],
+    photos: { main: main18, sub: [sub18] },
+    content: interview18,
   },
   {
     id: 19,
@@ -207,7 +361,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim", "yechoi", "jwon"],
     interviewee: ["Dall"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main19, sub: [] },
+    content: interview19,
   },
   {
     id: 20,
@@ -218,7 +373,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim", "yechoi", "jwon"],
     interviewee: ["Dall"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main20, sub: [sub20] },
+    content: interview20,
   },
   {
     id: 21,
@@ -229,7 +385,8 @@ export const interviews: Interview[] = [
     interviewer: ["myungkim"],
     interviewee: ["kalee"],
     photographer: ["yeslee"],
-    content: [],
+    photos: { main: main21, sub: [sub21] },
+    content: interview21,
   },
   {
     id: 22,
@@ -239,7 +396,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["sohan"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main22, sub: [sub22] },
+    content: interview22,
   },
   {
     id: 23,
@@ -249,7 +407,8 @@ export const interviews: Interview[] = [
     interviewer: ["yeonwlee"],
     interviewee: ["yomoon"],
     photographer: ["jaewpark"],
-    content: [],
+    photos: { main: main23, sub: [sub23] },
+    content: interview23,
   },
   {
     id: 24,
@@ -259,7 +418,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["hnoh"],
     photographer: ["yeslee"],
-    content: [],
+    photos: { main: main24, sub: [sub24] },
+    content: interview24,
   },
   {
     id: 25,
@@ -269,7 +429,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["myoon"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main25, sub: [sub25] },
+    content: interview25,
   },
   {
     id: 26,
@@ -279,7 +440,8 @@ export const interviews: Interview[] = [
     interviewer: ["soooh", "yeonwlee", "yechoi"],
     interviewee: ["yuchung", "kyunpark", "jrhee"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main26, sub: [sub26, sub26_2] },
+    content: interview26,
   },
   {
     id: 27,
@@ -289,7 +451,8 @@ export const interviews: Interview[] = [
     interviewer: ["byukim", "seungyel", "hmoon"],
     interviewee: ["apark", "hrha", "cjeon"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main27, sub: [sub27, sub27_2, sub27_3] },
+    content: interview27,
   },
   {
     id: 28,
@@ -299,7 +462,8 @@ export const interviews: Interview[] = [
     interviewer: ["seungyel"],
     interviewee: ["m-jongfeel-kim"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main28, sub: [sub28] },
+    content: interview28,
   },
   {
     id: 29,
@@ -309,7 +473,8 @@ export const interviews: Interview[] = [
     interviewer: ["hojo"],
     interviewee: ["echung"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main29, sub: [sub29] },
+    content: interview29,
   },
   {
     id: 30,
@@ -319,7 +484,8 @@ export const interviews: Interview[] = [
     interviewer: ["hojo"],
     interviewee: ["kilee"],
     photographer: ["hmoon", "jaewpark"],
-    content: [],
+    photos: { main: main30, sub: [sub30] },
+    content: interview30,
   },
   {
     id: 31,
@@ -329,7 +495,8 @@ export const interviews: Interview[] = [
     interviewer: ["hojo", "echung"],
     interviewee: ["seungoh"],
     photographer: ["hmoon"],
-    content: [],
+    photos: { main: main31, sub: [sub31] },
+    content: interview31,
   },
   {
     id: 32,
@@ -339,7 +506,8 @@ export const interviews: Interview[] = [
     interviewer: ["soooh"],
     interviewee: ["jolim"],
     photographer: ["yeslee"],
-    content: [],
+    photos: { main: main32, sub: [sub32] },
+    content: interview32,
   },
   {
     id: 33,
@@ -349,7 +517,8 @@ export const interviews: Interview[] = [
     interviewer: ["hojo"],
     interviewee: ["hyenam"],
     photographer: ["hmoon", "jwon"],
-    content: [],
+    photos: { main: main33, sub: [] },
+    content: interview33,
   },
   {
     id: 34,
@@ -359,7 +528,8 @@ export const interviews: Interview[] = [
     interviewer: ["echung", "haryu"],
     interviewee: ["m-youknowone"],
     photographer: ["hmoon"],
-    content: [],
+    photos: { main: main34, sub: [sub34] },
+    content: interview34,
   },
   {
     id: 35,
@@ -369,7 +539,8 @@ export const interviews: Interview[] = [
     interviewer: ["jaekim", "byukim"],
     interviewee: ["sehyan"],
     photographer: ["jaewpark"],
-    content: [],
+    photos: { main: main35, sub: [sub35] },
+    content: interview35,
   },
   {
     id: 36,
@@ -379,7 +550,8 @@ export const interviews: Interview[] = [
     interviewer: ["haryu"],
     interviewee: ["bomoon"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main36, sub: [sub36] },
+    content: interview36,
   },
   {
     id: 37,
@@ -389,7 +561,8 @@ export const interviews: Interview[] = [
     interviewer: ["hojo"],
     interviewee: ["jseo"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main37, sub: [sub37] },
+    content: interview37,
   },
   {
     id: 38,
@@ -399,7 +572,8 @@ export const interviews: Interview[] = [
     interviewer: ["ljeongin", "suekang"],
     interviewee: ["gulee"],
     photographer: ["hdoo"],
-    content: [],
+    photos: { main: main38, sub: [sub38] },
+    content: interview38,
   },
   {
     id: 39,
@@ -409,7 +583,8 @@ export const interviews: Interview[] = [
     interviewer: ["haryu"],
     interviewee: ["donghyuk", "nheo"],
     photographer: ["yeslee"],
-    content: [],
+    photos: { main: main39, sub: [sub39] },
+    content: interview39,
   },
   {
     id: 40,
@@ -419,7 +594,8 @@ export const interviews: Interview[] = [
     interviewer: ["haryu"],
     interviewee: ["jihyukim", "jabae"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main40, sub: [sub40] },
+    content: interview40,
   },
   {
     id: 41,
@@ -429,7 +605,8 @@ export const interviews: Interview[] = [
     interviewer: ["hmoon", "jaewpark"],
     interviewee: ["jiychoi", "junmkang"],
     photographer: ["jaewpark"],
-    content: [],
+    photos: { main: main41, sub: [sub41] },
+    content: interview41,
   },
   {
     id: 42,
@@ -439,7 +616,8 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["kristine"],
     photographer: ["jwon"],
-    content: [],
+    photos: { main: main42, sub: [sub42] },
+    content: interview42,
   },
   {
     id: 43,
@@ -449,6 +627,7 @@ export const interviews: Interview[] = [
     interviewer: ["changhle", "jerhee"],
     interviewee: ["yeongo"],
     photographer: ["hdoo"],
-    content: [],
+    photos: { main: main43, sub: [sub43] },
+    content: interview43,
   },
 ];

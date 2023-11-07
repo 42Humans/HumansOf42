@@ -1,6 +1,4 @@
-import { photos } from "@/images";
 import { interviews } from "@/interview";
-import { interview_contents } from "@/interview_json";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,18 +26,10 @@ export default function InterviewPage({
   params: { id: string };
 }) {
   const interview_meta = interviews.find((i) => i.id === Number(id));
-  const photo = photos.find((i) => i.id === Number(id));
-  const interview = interview_contents.find((i) => i.id === Number(id));
 
-  if (
-    interview === undefined ||
-    photo === undefined ||
-    interview_meta === undefined
-  ) {
+  if (interview_meta === undefined) {
     return <>Page not found</>;
   }
-  console.log(photo.sub);
-
   const intId = parseInt(id);
   if (intId < 0 && intId > interviews.length) {
     return <>Page not found</>;
@@ -59,27 +49,29 @@ export default function InterviewPage({
       <h1 className="p-2 text-sm w-full flex justify-center">
         {interview_meta.date.toISOString().slice(0, 10)}
       </h1>
-      {photo.main !== undefined && (
-        <Image
-          alt={`Photo of ${interview_meta.interviewee}`}
-          src={photo.main}
-          className="py-16 lg:px-8 2xl:px-32 w-full object-cover aspect-auto col-span-2"
-          placeholder="blur"
-          priority={true}
-        />
-      )}
+      <Image
+        alt={`Photo of ${interview_meta.interviewee}`}
+        src={interview_meta.photos.main}
+        className="py-16 lg:px-8 2xl:px-32 w-full object-cover aspect-auto col-span-2"
+        placeholder="blur"
+        quality={100}
+        priority={true}
+      />
 
       <div className="flex flex-col justify-start">
-        {interview.content.map((paragraph, index) => {
+        {interview_meta.content.map((paragraph, index) => {
           const className = paragraph.className ?? "";
 
+          console.log("text");
           if (paragraph.text !== undefined) {
             return (
               <p className={`font-sans px-4 pb-3 ${className}`} key={index}>
                 {paragraph.text}
               </p>
             );
-          } else if (paragraph.speaker !== undefined) {
+          }
+          console.log("speaker");
+          if (paragraph.speaker !== undefined) {
             return (
               <p
                 className={`w-full flex italic pb-0.5 pt-2 justify-start text-gray-300/70 ${className}`}
@@ -88,33 +80,36 @@ export default function InterviewPage({
                 {paragraph.speaker}
               </p>
             );
-          } else if (paragraph.question !== undefined) {
+          }
+          console.log("question");
+          if (paragraph.question !== undefined) {
             return (
               <p className={`${className}`} key={index}>
                 {paragraph.question}
               </p>
             );
-          } else if (paragraph.sub !== undefined) {
+          }
+          console.log("sub");
+          if (paragraph.sub !== undefined) {
             return (
               <p className={`${className}`} key={index}>
                 {paragraph.sub}
               </p>
             );
-          } else if (paragraph.imageDescription !== undefined) {
-            console.log("before shift, ", photo.sub);
-            const image = photo.sub.shift();
-            console.log("after shift, ", image);
-            if (image !== undefined) {
-              return (
-                <Image
-                  key={index}
-                  src={image}
-                  className={`py-8 lg:px-12 2xl:px-36 ${className}`}
-                  alt={`Photo of ${paragraph.imageDescription}`}
-                  priority={true}
-                />
-              );
-            }
+          }
+          console.log("image");
+          if (paragraph.imageDescription !== undefined) {
+            const image = interview_meta.photos.sub.shift()!;
+            console.log(image);
+            return (
+              <Image
+                key={index}
+                src={image}
+                className={`py-8 lg:px-12 2xl:px-36 ${className}`}
+                alt={`Photo of ${paragraph.imageDescription}`}
+                priority={true}
+              />
+            );
           }
         })}
       </div>
