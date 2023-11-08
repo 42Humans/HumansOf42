@@ -21,7 +21,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         if (paragraph.text !== undefined) {
           return (
             <p
-              className={`font-sans font-normal px-4 pb-3 ${className}`}
+              className={`font-sans font-light not-italic px-4 pb-3 ${className}`}
               key={index}
             >
               {paragraph.text}
