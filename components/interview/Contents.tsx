@@ -18,15 +18,17 @@ export function InterviewContents({ interview }: { interview: Interview }) {
       {interview.content.map((paragraph, index) => {
         const className = paragraph.className ?? "";
 
-        console.log("text");
         if (paragraph.text !== undefined) {
           return (
-            <p className={`font-sans px-4 pb-3 ${className}`} key={index}>
+            <p
+              className={`font-sans font-normal px-4 pb-3 ${className}`}
+              key={index}
+            >
               {paragraph.text}
             </p>
           );
         }
-        console.log("speaker");
+
         if (paragraph.speaker !== undefined) {
           return (
             <p
@@ -37,7 +39,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
             </p>
           );
         }
-        console.log("question");
+
         if (paragraph.question !== undefined) {
           return (
             <p className={`${className}`} key={index}>
@@ -45,7 +47,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
             </p>
           );
         }
-        console.log("sub");
+
         if (paragraph.sub !== undefined) {
           return (
             <p className={`${className}`} key={index}>
@@ -53,11 +55,10 @@ export function InterviewContents({ interview }: { interview: Interview }) {
             </p>
           );
         }
-        console.log("image");
+
         if (paragraph.imageDescription !== undefined) {
           const image = interview.photos.sub.shift()!;
           if (image === undefined) {
-            console.log("revalidate!!");
             revalidatePath(`/picture/${interview.id}`);
           }
           return (

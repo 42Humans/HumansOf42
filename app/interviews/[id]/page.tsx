@@ -39,14 +39,12 @@ export default function InterviewPage({
   const nextId = intId + 1;
   const prevId = intId - 1;
   const subphotos = interview_meta.photos.sub;
-  console.log("-----------id------------: ", id);
   if (
     subphotos.length !== 0 &&
     subphotos.every((value) => value === undefined)
   ) {
     throw notFound();
   }
-  console.log("sub count: ", subphotos.length);
   return (
     <div className="container lg:px-32 2xl:px-40 my-10 flex justify-center items-center flex-col">
       <h1 className="py-3 text-2xl font-bold flex justify-center w-full">
