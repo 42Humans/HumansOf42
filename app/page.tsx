@@ -20,8 +20,6 @@ function InterviewListView() {
           <Image
             alt={`interview for ${interview.interviewee}`}
             src={interview.photos.main}
-            width={336}
-            height={336}
             className="w-full object-cover aspect-square"
             placeholder="blur"
             priority={true}

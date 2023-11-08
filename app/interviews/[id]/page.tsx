@@ -1,3 +1,4 @@
+import { InterviewContents } from "@/components/interview/InterviewContents";
 import { interviews } from "@/interview";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,9 +35,6 @@ export default function InterviewPage({
   if (intId < 0 && intId > interviews.length) {
     throw notFound();
   }
-  const imageLoader = ({ src }: { src: string }) => {
-    return `@/public/picture/${id}/${src}.webp`;
-  };
 
   const nextId = intId + 1;
   const prevId = intId - 1;
@@ -48,6 +46,7 @@ export default function InterviewPage({
   ) {
     throw notFound();
   }
+  console.log("sub count: ", subphotos.length);
   return (
     <div className="container lg:px-32 2xl:px-40 my-10 flex justify-center items-center flex-col">
       <h1 className="py-3 text-2xl font-bold flex justify-center w-full">
@@ -68,64 +67,7 @@ export default function InterviewPage({
         priority={true}
       />
 
-      <div className="flex flex-col justify-start">
-        {interview_meta.content.map((paragraph, index) => {
-          const className = paragraph.className ?? "";
-
-          console.log("text");
-          if (paragraph.text !== undefined) {
-            return (
-              <p className={`font-sans px-4 pb-3 ${className}`} key={index}>
-                {paragraph.text}
-              </p>
-            );
-          }
-          console.log("speaker");
-          if (paragraph.speaker !== undefined) {
-            return (
-              <p
-                className={`w-full flex italic pb-0.5 pt-2 justify-start text-gray-300/70 ${className}`}
-                key={index}
-              >
-                {paragraph.speaker}
-              </p>
-            );
-          }
-          console.log("question");
-          if (paragraph.question !== undefined) {
-            return (
-              <p className={`${className}`} key={index}>
-                {paragraph.question}
-              </p>
-            );
-          }
-          console.log("sub");
-          if (paragraph.sub !== undefined) {
-            return (
-              <p className={`${className}`} key={index}>
-                {paragraph.sub}
-              </p>
-            );
-          }
-          console.log("image");
-          if (paragraph.imageDescription !== undefined) {
-            console.log(interview_meta.photos.sub.length);
-            const image = interview_meta.photos.sub.shift()!;
-            console.log(image);
-            return (
-              <Image
-                key={index}
-                src={paragraph.imageDescription}
-                className={`py-8 lg:px-12 2xl:px-36 ${className}`}
-                alt={`Photo of ${interview_meta.interviewee}`}
-                quality={100}
-                priority={true}
-                loader={imageLoader}
-              />
-            );
-          }
-        })}
-      </div>
+      <InterviewContents interview={interview_meta} />
 
       <StaffNameBox>
         interviewer {interview_meta.interviewer.join(", ")}
