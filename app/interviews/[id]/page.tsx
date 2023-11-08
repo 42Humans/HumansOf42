@@ -62,8 +62,6 @@ export default function InterviewPage({
         alt={`Photo of ${interview_meta.interviewee}`}
         src={interview_meta.photos.main}
         className="py-16 lg:px-8 2xl:px-32 w-full object-cover aspect-auto col-span-2"
-        placeholder="blur"
-        priority={true}
       />
 
       <InterviewContents interview={interview_meta} />

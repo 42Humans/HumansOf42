@@ -3,6 +3,15 @@ import Image from "next/image";
 import { interviews } from "@/interview";
 import { useRouter } from "next/navigation";
 
+export async function getStaticProps() {
+  // Simulate data fetching with a delay
+  await new Promise((resolve) => setTimeout(resolve, 20000));
+  // After the timeout, return your static props
+  return {
+    props: {}, // no need to pass actual data for static assets
+  };
+}
+
 export function InterviewListView() {
   const router = useRouter();
 
