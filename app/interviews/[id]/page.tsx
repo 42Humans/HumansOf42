@@ -1,4 +1,4 @@
-import { InterviewContents } from "@/components/interview/InterviewContents";
+import { InterviewContents } from "@/components/interview/Contents";
 import { interviews } from "@/interview";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,7 +63,6 @@ export default function InterviewPage({
         src={interview_meta.photos.main}
         className="py-16 lg:px-8 2xl:px-32 w-full object-cover aspect-auto col-span-2"
         placeholder="blur"
-        quality={100}
         priority={true}
       />
 
