@@ -5,14 +5,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
-  return interviews.map((interview) => {
-    return { id: interview.id.toString() };
-  });
+  return interviews.map((interview) => ({
+    id: interview.id.toString(),
+  }));
 }
 
 function StaffNameBox({ children }: React.PropsWithChildren) {
   return (
-    <h3 className="flex justify-end relative w-full italic">{children}</h3>
+    <div className="flex justify-end font-black relative w-full italic">
+      {children}
+    </div>
   );
 }
 
@@ -31,8 +33,6 @@ export default function InterviewPage({
   if (interview_meta === undefined) {
     throw notFound();
   }
-  console.log(JSON.stringify(interview_meta, null, "  "));
-  interview_meta.photos.sub.length;
   const intId = parseInt(id);
   if (intId < 0 && intId > interviews.length) {
     throw notFound();
@@ -67,10 +67,10 @@ export default function InterviewPage({
       <InterviewContents interview={interview_meta} />
 
       <StaffNameBox>
-        interviewer {interview_meta.interviewer.join(", ")}
+        <p>interviewer {interview_meta.interviewer.join(", ")}</p>
       </StaffNameBox>
       <StaffNameBox>
-        photographer {interview_meta.photographer.join(", ")}
+        <p>photographer {interview_meta.photographer.join(", ")}</p>
       </StaffNameBox>
       <div className="flex flex-row gap-2 w-10/12 justify-between pt-16">
         <Link
