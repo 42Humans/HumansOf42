@@ -48,11 +48,9 @@ export function InterviewContents({ interview }: { interview: Interview }) {
           return (
             <Image
               key={index}
-              src={`/picture/${interview.id}/${paragraph.imageDescription}.webp`}
+              src={image}
               className={`py-8 lg:px-12 2xl:px-36 ${className}`}
               alt={`Photo of ${interview.interviewee}`}
-              width="1200"
-              height="800"
               quality={100}
               priority={true}
             />
