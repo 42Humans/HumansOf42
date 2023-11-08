@@ -57,19 +57,18 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         }
 
         if (paragraph.imageDescription !== undefined) {
-          const image = interview.photos.sub.shift()!;
-          if (image === undefined) {
-            revalidatePath(`/picture/${interview.id}`);
+          const image = interview.photos.sub.shift();
+          if (image !== undefined) {
+            return (
+              <Image
+                key={index}
+                src={image}
+                className={`py-8 lg:px-12 2xl:px-36 ${className}`}
+                alt={`Photo of ${interview.interviewee}`}
+                priority={true}
+              />
+            );
           }
-          return (
-            <Image
-              key={index}
-              src={image}
-              className={`py-8 lg:px-12 2xl:px-36 ${className}`}
-              alt={`Photo of ${interview.interviewee}`}
-              priority={true}
-            />
-          );
         }
       })}
     </div>

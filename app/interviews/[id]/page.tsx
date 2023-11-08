@@ -31,6 +31,8 @@ export default function InterviewPage({
   if (interview_meta === undefined) {
     throw notFound();
   }
+  console.log(JSON.stringify(interview_meta, null, "  "));
+  interview_meta.photos.sub.length;
   const intId = parseInt(id);
   if (intId < 0 && intId > interviews.length) {
     throw notFound();
