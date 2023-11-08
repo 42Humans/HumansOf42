@@ -1,6 +1,4 @@
-"use client";
 import { Interview } from "@/interview";
-import { revalidatePath } from "next/cache";
 import Image from "next/image";
 
 export async function getStaticProps() {
@@ -21,7 +19,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         if (paragraph.text !== undefined) {
           return (
             <p
-              className={`font-sans font-light not-italic px-4 pb-3 ${className}`}
+              className={`font-sans font-medium not-italic px-4 pb-3 ${className}`}
               key={index}
             >
               {paragraph.text}
