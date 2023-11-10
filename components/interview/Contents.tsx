@@ -64,6 +64,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
                 className={`py-8 lg:px-12 2xl:px-36 ${className}`}
                 alt={`Photo of ${interview.interviewee}`}
                 priority={true}
+                loading="eager"
               />
             );
           }
