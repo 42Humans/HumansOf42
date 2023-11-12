@@ -1,8 +1,5 @@
-"use client";
 import { Interview } from "@/interview";
-import { revalidatePath } from "next/cache";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 export async function getStaticProps() {
   // Simulate data fetching with a delay
@@ -14,8 +11,6 @@ export async function getStaticProps() {
 }
 
 export function InterviewContents({ interview }: { interview: Interview }) {
-  const image = interview.photos.sub.shift();
-  const router = useRouter();
   return (
     <div className="flex flex-col justify-start">
       {interview.content.map((paragraph, index) => {
@@ -60,9 +55,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         }
 
         if (paragraph.imageDescription !== undefined) {
-          if (image === undefined) {
-            router.refresh();
-          }
+          const image = interview.photos.sub.shift();
           if (image !== undefined) {
             return (
               <Image
