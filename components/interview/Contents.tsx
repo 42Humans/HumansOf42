@@ -1,4 +1,5 @@
 import { Interview } from "@/interview";
+import { revalidatePath } from "next/cache";
 import Image from "next/image";
 
 export async function getStaticProps() {
@@ -56,6 +57,9 @@ export function InterviewContents({ interview }: { interview: Interview }) {
 
         if (paragraph.imageDescription !== undefined) {
           const image = interview.photos.sub.shift();
+          if (image === undefined) {
+            revalidatePath(`/picture/${interview.id}/`);
+          }
           if (image !== undefined) {
             return (
               <Image
