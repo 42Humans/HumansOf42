@@ -26,14 +26,6 @@ export function InterviewListView() {
             placeholder="blur"
             priority={true}
           />
-          {interview.photos.sub.map((sub) => (
-            <Image
-              key={sub.src}
-              alt={`interview for ${interview.interviewee}`}
-              src={sub}
-              className="absolute invisible"
-            />
-          ))}
           <button
             type="button"
             onClick={() => router.push(`/interviews/${interview.id}`)}
