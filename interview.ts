@@ -46,6 +46,7 @@ import sub2 from "@/public/picture/2/sub1.webp";
 import sub3 from "@/public/picture/3/sub1.webp";
 import sub4 from "@/public/picture/4/sub1.webp";
 import sub5 from "@/public/picture/5/sub1.webp";
+import sub5_2 from "@/public/picture/5/sub2.webp";
 import sub6 from "@/public/picture/6/sub1.webp";
 import sub7 from "@/public/picture/7/sub1.webp";
 import sub7_2 from "@/public/picture/7/sub2.webp";
@@ -209,7 +210,7 @@ export const interviews: Interview[] = [
     interviewer: ["yechoi"],
     interviewee: ["soooh", "inyang"],
     photographer: ["jwon", "yeslee"],
-    photos: { main: main5, sub: [sub5] },
+    photos: { main: main5, sub: [sub5, sub5_2] },
     content: interview5,
   },
   {
