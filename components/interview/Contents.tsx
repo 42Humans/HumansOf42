@@ -67,7 +67,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
               <Image
                 key={index}
                 src={image}
-                className={`aspect-video py-4 ${className}`}
+                className={`py-16 lg:px-8 2xl:px-32 w-full object-cover aspect-auto ${className}`}
                 alt={`Photo of ${interview.interviewee}`}
                 priority={true}
                 loading="eager"
