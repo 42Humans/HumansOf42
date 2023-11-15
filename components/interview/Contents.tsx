@@ -35,7 +35,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
           return (
             <p
               key={index}
-              className={`w-full flex italic pb-0.5 pt-2 justify-start text-black/60 dark:text-gray-300/70 ${className}`}
+              className={`w-full flex italic pb-0.5 pt-2 justify-start font-bold text-black/60 dark:text-gray-300/70 ${className}`}
             >
               {paragraph.speaker}
             </p>
