@@ -20,8 +20,8 @@ function StaffNameBox({
 }) {
   return (
     <div className="flex flex-row gap-4 justify-end relative w-full">
-      <span className="not-italic">{title}</span>
-      <span className="font-normal italic">{children}</span>
+      <span className="font-bold not-italic">{title}</span>
+      <span className="font-bold italic">{children}</span>
     </div>
   );
 }
