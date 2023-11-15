@@ -108,7 +108,7 @@
     "text": "잘 마무리 했겠지?(웃음)"
   },
   {
-    "text": "(사진순서 - 피시너들의 동료학습, apark, hrha, cjeon)",
-    "className": "w-full flex justify-end"
+    "sub": "(사진순서 - 피시너들의 동료학습, apark, hrha, cjeon)",
+    "className": "w-full py-3 flex justify-end"
   }
 ]

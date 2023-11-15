@@ -6,9 +6,15 @@ import Image from "next/image";
 import logo42 from "@/public/42_logo.svg";
 
 const victor = Victor_Mono({
-  subsets: ["latin"],
-  weight: "400",
-  style: "italic",
+  subsets: [
+    "cyrillic",
+    "cyrillic-ext",
+    "greek",
+    "latin",
+    "latin-ext",
+    "vietnamese",
+  ],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {

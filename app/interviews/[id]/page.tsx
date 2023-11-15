@@ -1,3 +1,4 @@
+import { noto_sans_kr } from "@/app/fonts";
 import { InterviewContents } from "@/components/interview/Contents";
 import { interviews } from "@/interview";
 import Image from "next/image";
@@ -10,10 +11,17 @@ export function generateStaticParams() {
   }));
 }
 
-function StaffNameBox({ children }: React.PropsWithChildren) {
+function StaffNameBox({
+  children,
+  title,
+}: {
+  children: React.ReactNode;
+  title: string;
+}) {
   return (
-    <div className="flex justify-end font-black relative w-full italic">
-      {children}
+    <div className="flex flex-row gap-4 justify-end relative w-full">
+      <span className="not-italic">{title}</span>
+      <span className="font-normal italic">{children}</span>
     </div>
   );
 }
@@ -42,7 +50,9 @@ export default function InterviewPage({
   const prevId = intId - 1;
   return (
     <div className="container lg:px-32 2xl:px-40 my-10 flex justify-center items-center flex-col">
-      <h1 className="py-3 text-2xl font-bold flex justify-center w-full">
+      <h1
+        className={`py-3 text-2xl font-bold flex justify-center w-full ${noto_sans_kr.className}`}
+      >
         {interview_meta.title}
       </h1>
       <h1 className="text-lg w-full flex justify-center p-2">
@@ -59,25 +69,27 @@ export default function InterviewPage({
 
       <InterviewContents interview={interview_meta} />
 
-      <StaffNameBox>
-        <p>interviewer {interview_meta.interviewer.join(", ")}</p>
-      </StaffNameBox>
-      <StaffNameBox>
-        <p>photographer {interview_meta.photographer.join(", ")}</p>
-      </StaffNameBox>
+      <div className="w-full ">
+        <StaffNameBox title="interviewer">
+          <p>{interview_meta.interviewer.join(", ")}</p>
+        </StaffNameBox>
+        <StaffNameBox title="photographer">
+          <p>{interview_meta.photographer.join(", ")}</p>
+        </StaffNameBox>
+      </div>
       <div className="flex flex-row gap-2 w-10/12 justify-between pt-16">
         <Link
           className={`${prevId === 0 && "invisible"}`}
           href={`/interviews/${prevId}`}
         >
-          <p>{"< 이전글"}</p>
+          <p className="not-italic">{"< 이전글"}</p>
         </Link>
 
         <Link
           className={`${nextId > MAXINDEX && "invisible"}`}
           href={`/interviews/${nextId}`}
         >
-          <p>{"다음글 >"}</p>
+          <p className="not-italic">{"다음글 >"}</p>
         </Link>
       </div>
     </div>

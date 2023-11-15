@@ -1,4 +1,5 @@
 "use client";
+import { nanum_brush, noto_sans_kr } from "@/app/fonts";
 import { Interview } from "@/interview";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -22,7 +23,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         if (paragraph.text !== undefined) {
           return (
             <p
-              className={`font-sans font-medium not-italic px-4 pb-3 ${className}`}
+              className={`font-sans font-normal text-base dark:text-gray-200/90 not-italic px-4 pb-3 ${className} ${noto_sans_kr.className}`}
               key={index}
             >
               {paragraph.text}
@@ -33,8 +34,8 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         if (paragraph.speaker !== undefined) {
           return (
             <p
-              className={`w-full flex italic pb-0.5 pt-2 justify-start text-gray-300/70 ${className}`}
               key={index}
+              className={`w-full flex italic pb-0.5 pt-2 justify-start text-black/60 dark:text-gray-300/70 ${className}`}
             >
               {paragraph.speaker}
             </p>
@@ -43,15 +44,21 @@ export function InterviewContents({ interview }: { interview: Interview }) {
 
         if (paragraph.question !== undefined) {
           return (
-            <p className={`${className}`} key={index}>
-              {paragraph.question}
+            <p
+              className={`${nanum_brush.className} w-full flex justify-start text-3xl not-italic items-center pl-6 py-6 font-bold ${className}`}
+              key={index}
+            >
+              Q. {paragraph.question}
             </p>
           );
         }
 
         if (paragraph.sub !== undefined) {
           return (
-            <p className={`${className}`} key={index}>
+            <p
+              className={`text-black/30 dark:text-white/30 ${className}`}
+              key={index}
+            >
               {paragraph.sub}
             </p>
           );
