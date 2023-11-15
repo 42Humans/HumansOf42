@@ -1,6 +1,7 @@
 import { noto_sans_kr } from "@/app/fonts";
 import { InterviewContents } from "@/components/interview/Contents";
 import { interviews } from "@/interview";
+import { Noto_Sans, Roboto } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -11,6 +12,12 @@ export function generateStaticParams() {
   }));
 }
 
+const roboto = Roboto({
+  weight: ["900"],
+  subsets: ["latin"],
+  style: "italic",
+});
+
 function StaffNameBox({
   children,
   title,
@@ -20,8 +27,8 @@ function StaffNameBox({
 }) {
   return (
     <div className="flex flex-row gap-4 justify-end relative w-full">
-      <span className="font-bold not-italic">{title}</span>
-      <span className="font-bold italic">{children}</span>
+      <span className={`${roboto.className} font-black`}>{title}</span>
+      <span className="font-black italic">{children}</span>
     </div>
   );
 }
@@ -55,7 +62,7 @@ export default function InterviewPage({
       >
         {interview_meta.title}
       </h1>
-      <h1 className="text-lg w-full flex justify-center p-2">
+      <h1 className="text-lg w-full flex justify-center p-2 italic">
         {interview_meta.subtitle}
       </h1>
       <h1 className="p-2 text-sm w-full flex justify-center">
