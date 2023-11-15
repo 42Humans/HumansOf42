@@ -112,6 +112,6 @@
   },
   {
     "text": "(사진순서 - kyunpark, jrhee, yuchung)",
-    "className": "w-full justify-end text-bold items-end"
+    "className": "w-full justify-end text-bold items-end flex"
   }
 ]
