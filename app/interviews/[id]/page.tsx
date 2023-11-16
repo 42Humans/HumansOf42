@@ -1,7 +1,6 @@
 import { noto_sans_kr } from "@/app/fonts";
 import { InterviewContents } from "@/components/interview/Contents";
 import { interviews } from "@/interview";
-import { Noto_Sans, Roboto } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -12,12 +11,6 @@ export function generateStaticParams() {
   }));
 }
 
-const roboto = Roboto({
-  weight: ["900"],
-  subsets: ["latin"],
-  style: "italic",
-});
-
 function StaffNameBox({
   children,
   title,
@@ -27,8 +20,8 @@ function StaffNameBox({
 }) {
   return (
     <div className="flex flex-row gap-4 justify-end relative w-full">
-      <span className={`${roboto.className} font-black`}>{title}</span>
-      <span className="font-black italic">{children}</span>
+      <span className={`font-black`}>{title}</span>
+      <span className="font-normal italic">{children}</span>
     </div>
   );
 }
