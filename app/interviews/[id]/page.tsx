@@ -69,7 +69,7 @@ export default function InterviewPage({
 
       <InterviewContents interview={interview_meta} />
 
-      <div className="w-full ">
+      <div className="w-full pt-8">
         <StaffNameBox title="interviewer">
           <p>{interview_meta.interviewer.join(", ")}</p>
         </StaffNameBox>
