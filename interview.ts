@@ -84,6 +84,7 @@ import sub38 from "@/public/picture/38/sub1.jpg";
 import sub39 from "@/public/picture/39/sub1.jpg";
 import sub40 from "@/public/picture/40/sub1.jpg";
 import sub41 from "@/public/picture/41/sub1.jpg";
+import sub41_2 from "@/public/picture/41/sub2.jpg";
 import sub42 from "@/public/picture/42/sub1.jpg";
 import sub43 from "@/public/picture/43/sub1.jpg";
 import interview1 from "@/public/interview/1.json";
@@ -608,7 +609,7 @@ export const interviews: Interview[] = [
     interviewer: ["hmoon", "jaewpark"],
     interviewee: ["jiychoi", "junmkang"],
     photographer: ["jaewpark"],
-    photos: { main: main41, sub: [sub41] },
+    photos: { main: main41, sub: [sub41, sub41_2] },
     content: interview41,
   },
   {
