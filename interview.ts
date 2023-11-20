@@ -41,6 +41,7 @@ import main40 from "@/public/picture/40/main.jpg";
 import main41 from "@/public/picture/41/main.jpg";
 import main42 from "@/public/picture/42/main.jpg";
 import main43 from "@/public/picture/43/main.jpg";
+
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
 import sub3 from "@/public/picture/3/sub1.jpg";
@@ -60,6 +61,7 @@ import sub15 from "@/public/picture/15/sub1.jpg";
 import sub16 from "@/public/picture/16/sub1.jpg";
 import sub17 from "@/public/picture/17/sub1.jpg";
 import sub18 from "@/public/picture/18/sub1.jpg";
+import sub19 from "@/public/picture/19/sub1.jpg";
 import sub20 from "@/public/picture/20/sub1.jpg";
 import sub21 from "@/public/picture/21/sub1.jpg";
 import sub22 from "@/public/picture/22/sub1.jpg";
@@ -87,6 +89,7 @@ import sub41 from "@/public/picture/41/sub1.jpg";
 import sub41_2 from "@/public/picture/41/sub2.jpg";
 import sub42 from "@/public/picture/42/sub1.jpg";
 import sub43 from "@/public/picture/43/sub1.jpg";
+
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
 import interview3 from "@/public/interview/3.json";
@@ -365,7 +368,7 @@ export const interviews: Interview[] = [
     interviewer: ["byukim", "yechoi", "jwon"],
     interviewee: ["Dall"],
     photographer: ["jwon"],
-    photos: { main: main19, sub: [] },
+    photos: { main: main19, sub: [sub19] },
     content: interview19,
   },
   {
