@@ -148,6 +148,7 @@ export type Interview = {
   date: Date;
   photographer: string[];
   interviewer: string[];
+  editor?: string[];
   interviewee: string[];
   photos: StaticPhoto;
   content: Paragraph[];
@@ -645,6 +646,7 @@ export const interviews: Interview[] = [
     date: new Date("2023-11-22"),
     interviewer: ["seojilee"],
     interviewee: ["ekwak"],
+    editor: ["jiwahn"],
     photographer: ["hdoo"],
     photos: { main: main43, sub: [] },
     content: interview44,

@@ -73,6 +73,11 @@ export default function InterviewPage({
         <StaffNameBox title="interviewer">
           <p>{interview_meta.interviewer.join(", ")}</p>
         </StaffNameBox>
+        {interview_meta.editor !== undefined && (
+          <StaffNameBox title="editor">
+            <p>{interview_meta.editor.join(", ")}</p>
+          </StaffNameBox>
+        )}
         <StaffNameBox title="photographer">
           <p>{interview_meta.photographer.join(", ")}</p>
         </StaffNameBox>
