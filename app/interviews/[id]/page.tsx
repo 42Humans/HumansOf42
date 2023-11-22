@@ -19,7 +19,7 @@ function StaffNameBox({
   title: string;
 }) {
   return (
-    <div className="flex flex-row gap-4 justify-end relative w-full">
+    <div className="flex flex-row gap-4 relative w-full">
       <span className={`font-black`}>{title}</span>
       <span className="font-normal italic">{children}</span>
     </div>
@@ -69,18 +69,20 @@ export default function InterviewPage({
 
       <InterviewContents interview={interview_meta} />
 
-      <div className="w-full pt-8">
-        <StaffNameBox title="interviewer">
-          <p>{interview_meta.interviewer.join(", ")}</p>
-        </StaffNameBox>
-        {interview_meta.editor !== undefined && (
-          <StaffNameBox title="editor">
-            <p>{interview_meta.editor.join(", ")}</p>
+      <div className="w-full flex justify-end">
+        <div className="pt-8">
+          {interview_meta.editor !== undefined && (
+            <StaffNameBox title="editor">
+              <p>{interview_meta.editor.join(", ")}</p>
+            </StaffNameBox>
+          )}
+          <StaffNameBox title="interviewer">
+            <p>{interview_meta.interviewer.join(", ")}</p>
           </StaffNameBox>
-        )}
-        <StaffNameBox title="photographer">
-          <p>{interview_meta.photographer.join(", ")}</p>
-        </StaffNameBox>
+          <StaffNameBox title="photographer">
+            <p>{interview_meta.photographer.join(", ")}</p>
+          </StaffNameBox>
+        </div>
       </div>
       <div className="flex flex-row gap-2 w-10/12 justify-between pt-16">
         <Link
