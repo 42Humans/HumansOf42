@@ -133,6 +133,7 @@ import interview40 from "@/public/interview/40.json";
 import interview41 from "@/public/interview/41.json";
 import interview42 from "@/public/interview/42.json";
 import interview43 from "@/public/interview/43.json";
+import interview44 from "@/public/interview/44.json";
 import { StaticImageData } from "next/image";
 
 type StaticPhoto = {
@@ -636,5 +637,16 @@ export const interviews: Interview[] = [
     photographer: ["hdoo"],
     photos: { main: main43, sub: [sub43] },
     content: interview43,
+  },
+  {
+    id: 44,
+    title: "릴레이 인터뷰 1. 비전공자 Learner - ekwak",
+    subtitle: "ekwak의 이야기",
+    date: new Date("2023-11-22"),
+    interviewer: ["seojilee"],
+    interviewee: ["ekwak"],
+    photographer: ["hdoo"],
+    photos: { main: main43, sub: [] },
+    content: interview44,
   },
 ];
