@@ -71,17 +71,17 @@ export default function InterviewPage({
 
       <div className="w-full flex justify-end">
         <div className="pt-8">
-          {interview_meta.editor !== undefined && (
-            <StaffNameBox title="editor">
-              <p>{interview_meta.editor.join(", ")}</p>
-            </StaffNameBox>
-          )}
           <StaffNameBox title="interviewer">
             <p>{interview_meta.interviewer.join(", ")}</p>
           </StaffNameBox>
           <StaffNameBox title="photographer">
             <p>{interview_meta.photographer.join(", ")}</p>
           </StaffNameBox>
+          {interview_meta.editor !== undefined && (
+            <StaffNameBox title="editor">
+              <p>{interview_meta.editor.join(", ")}</p>
+            </StaffNameBox>
+          )}
         </div>
       </div>
       <div className="flex flex-row gap-2 w-10/12 justify-between pt-16">
