@@ -17,7 +17,7 @@ export function InterviewListView() {
 
   return (
     <div className="relative w-fit max-w-7xl h-fit justify-items-center gap-16 grid grid-cols md:grid-cols-2 2xl:grid-cols-3 p-8">
-      {interviews.map((interview) => (
+      {interviews.toReversed().map((interview) => (
         <div className="relative" key={interview.id}>
           <Image
             alt={`interview for ${interview.interviewee}`}
