@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -eux
 
 # %s/""/"/g
@@ -18,8 +18,12 @@ if [ -z "$FILE" ] || [ ! -f "$FILE" ]; then
 fi
 
 # for question
-sed -i '' -e 's/^Q.*\. /{"question": "/g; /^[^{].*\?/ s/^/{"question": "/;  s/^{"question": .*/&"}, /g' "$FILE"
+sed -i '' -e 's/^Q.*\. /{"question": "/g; /^[^{].*?$/ s/^/{"question": "/;  s/^{"question": .*/&"}, /g' "$FILE"
 # for speaker
-sed -i '' -e 's/^[a-z]/{"speaker": &/g; s/{"speaker": .*/&"}, /g' "$FILE"
+sed -i '' -e 's/^[a-z]* /{"speaker": "&"},\n/g' "$FILE"
 # for normal text
 sed -i '' -e '/^[^{]/ s/^/{"text": "/; /^{"text":/ s/$/" },/' "$FILE"
+
+# Add '[' at the beginning and ']' at the end
+echo "[" | cat - "$FILE" > temp && mv temp "$FILE"
+echo "]" >> "$FILE"

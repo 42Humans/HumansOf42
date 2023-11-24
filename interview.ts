@@ -156,7 +156,6 @@ export type Paragraph = {
 export type Interview = {
   id: number;
   title: string;
-  subtitle: string;
   date: Date;
   photographer: string[];
   interviewer: string[];
@@ -170,7 +169,6 @@ export const interviews: Interview[] = [
   {
     id: 1,
     title: "첫인상은 '아, 이거다!' 였어요",
-    subtitle: "doby의 이야기",
     date: new Date("2021-03-21"),
     interviewer: ["byukim"],
     interviewee: ["doby"],
@@ -181,7 +179,6 @@ export const interviews: Interview[] = [
   {
     id: 2,
     title: "기록하고 정리하는 걸 좋아해요",
-    subtitle: "mki의 이야기",
     date: new Date("2021-03-21"),
     interviewer: ["yechoi"],
     interviewee: ["mki"],
@@ -192,7 +189,6 @@ export const interviews: Interview[] = [
   {
     id: 3,
     title: "특이한 스타일을 하면 일상에 재밌는 일이 많이 생겨요",
-    subtitle: "kyukim의 이야기",
     date: new Date("2021-03-21"),
     interviewer: ["yechoi"],
     interviewee: ["kyukim"],
@@ -203,7 +199,6 @@ export const interviews: Interview[] = [
   {
     id: 4,
     title: "기뻐할 겨를 없이 세그폴트를 잡고 있었어요",
-    subtitle: "hseo의 이야기",
     date: new Date("2021-03-30"),
     interviewer: ["byukim"],
     interviewee: ["hseo"],
@@ -214,7 +209,6 @@ export const interviews: Interview[] = [
   {
     id: 5,
     title: "42서울에서의 삶은 '어른스럽다'에 가까운 것 같아요",
-    subtitle: "soooh, inyang의 이야기",
     date: new Date("2021-04-06"),
     interviewer: ["yechoi"],
     interviewee: ["soooh", "inyang"],
@@ -225,7 +219,6 @@ export const interviews: Interview[] = [
   {
     id: 6,
     title: "달리는 삶을 살고 싶어요, 늘 그랬듯이",
-    subtitle: "ryukim의 이야기",
     date: new Date("2021-04-13"),
     interviewer: ["iwoo"],
     interviewee: ["ryukim"],
@@ -236,7 +229,6 @@ export const interviews: Interview[] = [
   {
     id: 7,
     title: "만약 누가 라 피신을 다시 하라고 묻는다면…",
-    subtitle: "mseo, seohchoi의 이야기",
     date: new Date("2021-04-20"),
     interviewer: ["byukim"],
     interviewee: ["mseo", "seohchoi"],
@@ -247,7 +239,6 @@ export const interviews: Interview[] = [
   {
     id: 8,
     title: "스스로 벽을 넘는 능력을 갖췄으면 좋겠어요",
-    subtitle: "amin의 이야기",
     date: new Date("2021-04-22"),
     interviewer: ["yechoi"],
     interviewee: ["amin"],
@@ -258,7 +249,6 @@ export const interviews: Interview[] = [
   {
     id: 9,
     title: "하고 싶은 일이 생기면 무조건 일을 벌이는 편이에요",
-    subtitle: "sunpark의 이야기",
     date: new Date("2021-04-27"),
     interviewer: ["iwoo"],
     interviewee: ["sunpark"],
@@ -269,7 +259,6 @@ export const interviews: Interview[] = [
   {
     id: 10,
     title: "꼭 붙었으면 좋겠어요",
-    subtitle: "jseol의 이야기",
     date: new Date("2021-05-04"),
     interviewer: ["yechoi"],
     interviewee: ["jseol"],
@@ -280,7 +269,6 @@ export const interviews: Interview[] = [
   {
     id: 11,
     title: "내 입지를 내가 직접 없애고 있다는 생각이 들었어요",
-    subtitle: "jekim의 이야기",
     date: new Date("2021-05-11"),
     interviewer: ["byukim"],
     interviewee: ["jekim"],
@@ -291,7 +279,6 @@ export const interviews: Interview[] = [
   {
     id: 12,
     title: "합류한 건 교육 혁신에 대한 꿈 때문이에요",
-    subtitle: "STARK의 이야기",
     date: new Date("2021-05-18"),
     interviewer: ["yechoi"],
     interviewee: ["STARK"],
@@ -302,7 +289,6 @@ export const interviews: Interview[] = [
   {
     id: 13,
     title: "시큐어 코딩을 할 줄 아는 개발자가 되고 싶어요",
-    subtitle: "jaeskim의 이야기",
     date: new Date("2021-05-25"),
     interviewer: ["yechoi"],
     interviewee: ["jaeskim"],
@@ -313,7 +299,6 @@ export const interviews: Interview[] = [
   {
     id: 14,
     title: "인생은 한 번 뿐이니까 YOLO 정신으로 지원했죠",
-    subtitle: "hyeonski의 이야기",
     date: new Date("2021-06-01"),
     interviewer: ["byukim"],
     interviewee: ["hyeonski"],
@@ -324,7 +309,6 @@ export const interviews: Interview[] = [
   {
     id: 15,
     title: "저는 뭔가에 잘 꽂혀요",
-    subtitle: "hyeyoo의 이야기",
     date: new Date("2021-06-08"),
     interviewer: ["yeonwlee", "myungkim"],
     interviewee: ["hyeyoo"],
@@ -335,7 +319,6 @@ export const interviews: Interview[] = [
   {
     id: 16,
     title: "마지막까지 하고 싶은 걸 하면서 살고 싶어요",
-    subtitle: "gshim의 이야기",
     date: new Date("2021-06-15"),
     interviewer: ["hmoon"],
     interviewee: ["gshim"],
@@ -346,7 +329,6 @@ export const interviews: Interview[] = [
   {
     id: 17,
     title: "‘개발을 배우는 과정에서의 행복’이 중요한 가치라는 생각이 들어요",
-    subtitle: "eunhkim의 이야기",
     date: new Date("2021-06-22"),
     interviewer: ["yechoi", "yeonwlee", "myungkim"],
     interviewee: ["eunhkim"],
@@ -357,7 +339,6 @@ export const interviews: Interview[] = [
   {
     id: 18,
     title: "내가 좋아하는 일을 하면서 돈을 벌고 싶다고 생각했어요",
-    subtitle: "hyekim의 이야기",
     date: new Date("2021-06-29"),
     interviewer: ["byukim"],
     interviewee: ["hyekim"],
@@ -368,7 +349,6 @@ export const interviews: Interview[] = [
   {
     id: 19,
     title: "새로운 교육 시스템을 만드는 건 매우 중요하고 의미 있는 일이잖아요",
-    subtitle: "Dall의 이야기",
     date: new Date("2021-07-02"),
     interviewer: ["byukim", "yechoi", "jwon"],
     interviewee: ["Dall"],
@@ -380,7 +360,6 @@ export const interviews: Interview[] = [
     id: 20,
     title:
       "프로와 아마추어의 차이는 '자신을 평가할 줄 아는 능력'의 유무에 있어요",
-    subtitle: "Dall의 이야기",
     date: new Date("2021-07-06"),
     interviewer: ["byukim", "yechoi", "jwon"],
     interviewee: ["Dall"],
@@ -392,7 +371,6 @@ export const interviews: Interview[] = [
     id: 21,
     title:
       "‘한밤의 늑대인간’을 실제 사용할 수 있는 어플리케이션으로 만들어보고 싶어요",
-    subtitle: "kalee의 이야기",
     date: new Date("2021-07-13"),
     interviewer: ["myungkim"],
     interviewee: ["kalee"],
@@ -403,7 +381,6 @@ export const interviews: Interview[] = [
   {
     id: 22,
     title: "이렇게 행복하다고 느끼는 것 자체도 행복해요",
-    subtitle: "sohan의 이야기",
     date: new Date("2021-07-20"),
     interviewer: ["yechoi"],
     interviewee: ["sohan"],
@@ -414,7 +391,6 @@ export const interviews: Interview[] = [
   {
     id: 23,
     title: "제 동력원은 사람이에요",
-    subtitle: "yomoon의 이야기",
     date: new Date("2021-07-27"),
     interviewer: ["yeonwlee"],
     interviewee: ["yomoon"],
@@ -425,7 +401,6 @@ export const interviews: Interview[] = [
   {
     id: 24,
     title: '"그림과 프로그래밍 두 마리 토끼를 모두 잡으려고 노력하고 있어요"',
-    subtitle: "hnoh의 이야기",
     date: new Date("2021-08-03"),
     interviewer: ["byukim"],
     interviewee: ["hnoh"],
@@ -436,7 +411,6 @@ export const interviews: Interview[] = [
   {
     id: 25,
     title: "이런 장점을 타고난 게 운이 좋았다고 생각해요",
-    subtitle: "myoon의 이야기",
     date: new Date("2021-09-14"),
     interviewer: ["yechoi"],
     interviewee: ["myoon"],
@@ -447,7 +421,6 @@ export const interviews: Interview[] = [
   {
     id: 26,
     title: "The Hitchhikers - 1",
-    subtitle: "yuchung, kyunpark, jrhee의 이야기",
     date: new Date("2021-09-28"),
     interviewer: ["soooh", "yeonwlee", "yechoi"],
     interviewee: ["yuchung", "kyunpark", "jrhee"],
@@ -458,7 +431,6 @@ export const interviews: Interview[] = [
   {
     id: 27,
     title: "The Hitchhikers - 2",
-    subtitle: "apark, hrha, cjeon의 이야기",
     date: new Date("2021-10-05"),
     interviewer: ["byukim", "seungyel", "hmoon"],
     interviewee: ["apark", "hrha", "cjeon"],
@@ -469,7 +441,6 @@ export const interviews: Interview[] = [
   {
     id: 28,
     title: "어느 날 문득 멘토링을 해야겠다는 생각이 들었어요",
-    subtitle: "m-jongfeel-kim의 이야기",
     date: new Date("2021-11-04"),
     interviewer: ["seungyel"],
     interviewee: ["m-jongfeel-kim"],
@@ -480,7 +451,6 @@ export const interviews: Interview[] = [
   {
     id: 29,
     title: "새로운 사람을 두려워하지 않아요",
-    subtitle: "echung의 이야기",
     date: new Date("2021-12-07"),
     interviewer: ["hojo"],
     interviewee: ["echung"],
@@ -491,7 +461,6 @@ export const interviews: Interview[] = [
   {
     id: 30,
     title: "42Seoul에 창업하러 왔습니다",
-    subtitle: "kilee의 이야기",
     date: new Date("2021-12-20"),
     interviewer: ["hojo"],
     interviewee: ["kilee"],
@@ -502,7 +471,6 @@ export const interviews: Interview[] = [
   {
     id: 31,
     title: "클러스터에 다시 나오니까 너무 재미있어요",
-    subtitle: "seungoh의 이야기",
     date: new Date("2022-01-13"),
     interviewer: ["hojo", "echung"],
     interviewee: ["seungoh"],
@@ -513,7 +481,6 @@ export const interviews: Interview[] = [
   {
     id: 32,
     title: "저는 제가 하고 싶은 거 하면서 살고 싶어요",
-    subtitle: "jolim의 이야기",
     date: new Date("2022-01-26"),
     interviewer: ["soooh"],
     interviewee: ["jolim"],
@@ -524,7 +491,6 @@ export const interviews: Interview[] = [
   {
     id: 33,
     title: "나이는 중요하지 않은 거 같아요, 적어도 이곳에서는",
-    subtitle: "hyenam의 이야기",
     date: new Date("2022-02-04"),
     interviewer: ["hojo"],
     interviewee: ["hyenam"],
@@ -535,7 +501,6 @@ export const interviews: Interview[] = [
   {
     id: 34,
     title: "'만들고 싶다'가 가장 중요해요",
-    subtitle: "m-youknowone의 이야기",
     date: new Date("2022-02-11"),
     interviewer: ["echung", "haryu"],
     interviewee: ["m-youknowone"],
@@ -546,7 +511,6 @@ export const interviews: Interview[] = [
   {
     id: 35,
     title: "42서울 사람들과 헤어지고 싶지 않은 마음이 커요",
-    subtitle: "sehyan의 이야기",
     date: new Date("2022-02-18"),
     interviewer: ["jaekim", "byukim"],
     interviewee: ["sehyan"],
@@ -557,7 +521,6 @@ export const interviews: Interview[] = [
   {
     id: 36,
     title: "나를 믿는 믿음",
-    subtitle: "bomoon의 이야기",
     date: new Date("2022-03-11"),
     interviewer: ["haryu"],
     interviewee: ["bomoon"],
@@ -568,7 +531,6 @@ export const interviews: Interview[] = [
   {
     id: 37,
     title: "42Seoul 커뮤니티에 도움이 되고 싶었어요.",
-    subtitle: "jseo의 이야기",
     date: new Date("2022-04-01"),
     interviewer: ["hojo"],
     interviewee: ["jseo"],
@@ -579,7 +541,6 @@ export const interviews: Interview[] = [
   {
     id: 38,
     title: "중요한 건 일을 해나갈 수 있는 명분이에요",
-    subtitle: "gulee의 이야기",
     date: new Date("2022-05-02"),
     interviewer: ["ljeongin", "suekang"],
     interviewee: ["gulee"],
@@ -590,7 +551,6 @@ export const interviews: Interview[] = [
   {
     id: 39,
     title: "도전할 자신감은 도전에서 나온다",
-    subtitle: "donghyuk, nheo의 이야기",
     date: new Date("2022-05-06"),
     interviewer: ["haryu"],
     interviewee: ["donghyuk", "nheo"],
@@ -601,7 +561,6 @@ export const interviews: Interview[] = [
   {
     id: 40,
     title: "협력, 소통을 배우는 시간",
-    subtitle: "jihyukim, jabae의 이야기",
     date: new Date("2022-06-03"),
     interviewer: ["haryu"],
     interviewee: ["jihyukim", "jabae"],
@@ -612,7 +571,6 @@ export const interviews: Interview[] = [
   {
     id: 41,
     title: "사람들이 다 치유해준 것 같아요",
-    subtitle: "jiychoi, junmkang의 이야기",
     date: new Date("2022-07-19"),
     interviewer: ["hmoon", "jaewpark"],
     interviewee: ["jiychoi", "junmkang"],
@@ -623,7 +581,6 @@ export const interviews: Interview[] = [
   {
     id: 42,
     title: "Life is 42",
-    subtitle: "kristine의 이야기",
     date: new Date("2022-09-13"),
     interviewer: ["yechoi"],
     interviewee: ["kristine"],
@@ -634,7 +591,6 @@ export const interviews: Interview[] = [
   {
     id: 43,
     title: "yego에서 yeogo, 그리고 yeongo로",
-    subtitle: "yeongo의 이야기",
     date: new Date("2022-10-25"),
     interviewer: ["changhle", "jerhee"],
     interviewee: ["yeongo"],
@@ -645,8 +601,7 @@ export const interviews: Interview[] = [
   {
     id: 44,
     title: "릴레이 인터뷰 1. 비전공자 Learner - ekwak",
-    subtitle: "ekwak의 이야기",
-    date: new Date("2023-11-22"),
+    date: new Date("2023-11-24"),
     interviewer: ["seojilee"],
     interviewee: ["ekwak"],
     editor: ["jiwahn"],
@@ -657,8 +612,7 @@ export const interviews: Interview[] = [
   {
     id: 45,
     title: "릴레이 인터뷰 2. 비전공자 Member - jungyeok",
-    subtitle: "jungyeok의 이야기",
-    date: new Date("2023-11-22"),
+    date: new Date("2023-11-24"),
     interviewer: ["seojilee"],
     interviewee: ["jungyeok"],
     editor: ["jiwahn"],
