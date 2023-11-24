@@ -53,6 +53,14 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          
+      - name: Prettier Check
+        # You may pin to the exact commit or the version.
+        # uses: rutajdash/prettier-cli-action@9e27606a9e18d40b6b4a2b4159e780241d2fbb3c
+        uses: rutajdash/prettier-cli-action@v1.0.1
+        with:
+          file_pattern: public/interview/*.json
+  
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
