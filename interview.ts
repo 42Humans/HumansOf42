@@ -41,6 +41,7 @@ import main40 from "@/public/picture/40/main.jpg";
 import main41 from "@/public/picture/41/main.jpg";
 import main42 from "@/public/picture/42/main.jpg";
 import main43 from "@/public/picture/43/main.jpg";
+import main45 from "@/public/picture/45/main.jpg";
 
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
@@ -90,6 +91,7 @@ import sub41 from "@/public/picture/41/sub1.jpg";
 import sub41_2 from "@/public/picture/41/sub2.jpg";
 import sub42 from "@/public/picture/42/sub1.jpg";
 import sub43 from "@/public/picture/43/sub1.jpg";
+import sub45 from "@/public/picture/45/sub1.jpg";
 
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
@@ -617,7 +619,7 @@ export const interviews: Interview[] = [
     interviewee: ["jungyeok"],
     editor: ["jiwahn"],
     photographer: ["hdoo"],
-    photos: { main: main43, sub: [] },
+    photos: { main: main45, sub: [sub45] },
     content: interview45,
   },
   {
