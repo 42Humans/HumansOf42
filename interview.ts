@@ -612,7 +612,7 @@ export const interviews: Interview[] = [
   //   content: interview44,
   // },
   {
-    id: 45,
+    id: 44,
     title: "릴레이 인터뷰 2. 비전공자 Member - jungyeok",
     date: new Date("2023-11-24"),
     interviewer: ["seojilee"],

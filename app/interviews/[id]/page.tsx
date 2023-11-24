@@ -86,17 +86,17 @@ export default function InterviewPage({
       </div>
       <div className="flex flex-row gap-2 w-10/12 justify-between pt-16">
         <Link
-          className={`${prevId === 0 && "invisible"}`}
-          href={`/interviews/${prevId}`}
-        >
-          <p className="not-italic">{"< 이전글"}</p>
-        </Link>
-
-        <Link
           className={`${nextId > MAXINDEX && "invisible"}`}
           href={`/interviews/${nextId}`}
         >
-          <p className="not-italic">{"다음글 >"}</p>
+          <p className="not-italic">{"< 다음글"}</p>
+        </Link>
+
+        <Link
+          className={`${prevId === 0 && "invisible"}`}
+          href={`/interviews/${prevId}`}
+        >
+          <p className="not-italic">{"이전글 >"}</p>
         </Link>
       </div>
     </div>
