@@ -14,10 +14,11 @@ export async function getStaticProps() {
 
 export function InterviewListView() {
   const router = useRouter();
+  const reverse_interviews = interviews.reverse();
 
   return (
     <div className="relative w-fit max-w-7xl h-fit justify-items-center gap-16 grid grid-cols md:grid-cols-2 2xl:grid-cols-3 p-8">
-      {interviews.toReversed().map((interview) => (
+      {reverse_interviews.map((interview) => (
         <div className="relative" key={interview.id}>
           <Image
             alt={`interview for ${interview.interviewee}`}
