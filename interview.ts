@@ -135,6 +135,8 @@ import interview41 from "@/public/interview/41.json";
 import interview42 from "@/public/interview/42.json";
 import interview43 from "@/public/interview/43.json";
 import interview44 from "@/public/interview/44.json";
+import interview45 from "@/public/interview/45.json";
+import interview46 from "@/public/interview/46.json";
 import { StaticImageData } from "next/image";
 
 type StaticPhoto = {
@@ -662,6 +664,18 @@ export const interviews: Interview[] = [
     editor: ["jiwahn"],
     photographer: ["hdoo"],
     photos: { main: main43, sub: [] },
-    content: interview44,
+    content: interview45,
+  },
+  {
+    id: 46,
+    title: "릴레이 인터뷰 3. 전공자 Learner - shikim",
+    subtitle: "shikim의 이야기",
+    date: new Date("2023-11-22"),
+    interviewer: ["seojilee"],
+    interviewee: ["shikim"],
+    editor: ["jiwahn"],
+    photographer: ["hdoo"],
+    photos: { main: main43, sub: [] },
+    content: interview46,
   },
 ];
