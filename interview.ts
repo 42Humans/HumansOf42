@@ -142,6 +142,15 @@ type StaticPhoto = {
   sub: StaticImageData[];
 };
 
+export type Paragraph = {
+  speaker?: string | undefined;
+  text?: string | undefined;
+  imageDescription?: string | undefined;
+  sub?: string | undefined;
+  question?: string | undefined;
+  className?: string | undefined;
+};
+
 export type Interview = {
   id: number;
   title: string;
@@ -153,15 +162,6 @@ export type Interview = {
   interviewee: string[];
   photos: StaticPhoto;
   content: Paragraph[];
-};
-
-export type Paragraph = {
-  speaker?: string | undefined;
-  text?: string | undefined;
-  imageDescription?: string | undefined;
-  sub?: string | undefined;
-  question?: string | undefined;
-  className?: string | undefined;
 };
 
 export const interviews: Interview[] = [
@@ -647,6 +647,18 @@ export const interviews: Interview[] = [
     date: new Date("2023-11-22"),
     interviewer: ["seojilee"],
     interviewee: ["ekwak"],
+    editor: ["jiwahn"],
+    photographer: ["hdoo"],
+    photos: { main: main43, sub: [] },
+    content: interview44,
+  },
+  {
+    id: 45,
+    title: "릴레이 인터뷰 2. 비전공자 Member - jungyeok",
+    subtitle: "jungyeok의 이야기",
+    date: new Date("2023-11-22"),
+    interviewer: ["seojilee"],
+    interviewee: ["jungyeok"],
     editor: ["jiwahn"],
     photographer: ["hdoo"],
     photos: { main: main43, sub: [] },
