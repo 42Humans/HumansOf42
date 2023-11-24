@@ -623,7 +623,6 @@ export const interviews: Interview[] = [
   {
     id: 46,
     title: "릴레이 인터뷰 3. 전공자 Learner - shikim",
-    subtitle: "shikim의 이야기",
     date: new Date("2023-11-22"),
     interviewer: ["seojilee"],
     interviewee: ["shikim"],
