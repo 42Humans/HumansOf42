@@ -45,7 +45,7 @@ export function InterviewContents({ interview }: { interview: Interview }) {
         if (paragraph.question !== undefined) {
           return (
             <p
-              className={`${nanum_brush.className} w-full flex justify-start text-3xl not-italic items-center pl-6 py-6 font-bold ${className}`}
+              className={`w-full flex justify-start text-xl not-italic items-center pl-3 py-6 font-bold ${className}`}
               key={index}
             >
               Q. {paragraph.question}
