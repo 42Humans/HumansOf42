@@ -67,6 +67,7 @@ import sub21 from "@/public/picture/21/sub1.jpg";
 import sub22 from "@/public/picture/22/sub1.jpg";
 import sub23 from "@/public/picture/23/sub1.jpg";
 import sub24 from "@/public/picture/24/sub1.jpg";
+import sub24_2 from "@/public/picture/24/sub2.jpg";
 import sub25 from "@/public/picture/25/sub1.jpg";
 import sub26 from "@/public/picture/26/sub1.jpg";
 import sub26_2 from "@/public/picture/26/sub2.jpg";
@@ -427,7 +428,7 @@ export const interviews: Interview[] = [
     interviewer: ["byukim"],
     interviewee: ["hnoh"],
     photographer: ["yeslee"],
-    photos: { main: main24, sub: [sub24] },
+    photos: { main: main24, sub: [sub24, sub24_2] },
     content: interview24,
   },
   {
