@@ -41,6 +41,7 @@ import main40 from "@/public/picture/40/main.jpg";
 import main41 from "@/public/picture/41/main.jpg";
 import main42 from "@/public/picture/42/main.jpg";
 import main43 from "@/public/picture/43/main.jpg";
+import main44 from "@/public/picture/44/main.jpg";
 import main45 from "@/public/picture/45/main.jpg";
 
 import sub1 from "@/public/picture/1/sub1.jpg";
@@ -91,6 +92,7 @@ import sub41 from "@/public/picture/41/sub1.jpg";
 import sub41_2 from "@/public/picture/41/sub2.jpg";
 import sub42 from "@/public/picture/42/sub1.jpg";
 import sub43 from "@/public/picture/43/sub1.jpg";
+import sub44 from "@/public/picture/44/sub1.jpg";
 import sub45 from "@/public/picture/45/sub1.jpg";
 
 import interview1 from "@/public/interview/1.json";
@@ -600,19 +602,19 @@ export const interviews: Interview[] = [
     photos: { main: main43, sub: [sub43] },
     content: interview43,
   },
-  // {
-  //   id: 44,
-  //   title: "릴레이 인터뷰 1. 비전공자 Learner - ekwak",
-  //   date: new Date("2023-11-24"),
-  //   interviewer: ["seojilee"],
-  //   interviewee: ["ekwak"],
-  //   editor: ["jiwahn"],
-  //   photographer: ["hdoo"],
-  //   photos: { main: main43, sub: [] },
-  //   content: interview44,
-  // },
   {
     id: 44,
+    title: "릴레이 인터뷰 1. 비전공자 Learner - ekwak",
+    date: new Date("2023-11-24"),
+    interviewer: ["seojilee"],
+    interviewee: ["ekwak"],
+    editor: ["jiwahn"],
+    photographer: ["hdoo"],
+    photos: { main: main44, sub: [sub44] },
+    content: interview44,
+  },
+  {
+    id: 45,
     title: "릴레이 인터뷰 2. 비전공자 Member - jungyeok",
     date: new Date("2023-11-24"),
     interviewer: ["seojilee"],
