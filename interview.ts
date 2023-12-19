@@ -44,6 +44,7 @@ import main43 from "@/public/picture/43/main.jpg";
 import main44 from "@/public/picture/44/main.jpg";
 import main45 from "@/public/picture/45/main.jpg";
 import main46 from "@/public/picture/46/main.jpg";
+import main47 from "@/public/picture/47/main.jpg";
 
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
@@ -96,6 +97,7 @@ import sub43 from "@/public/picture/43/sub1.jpg";
 import sub44 from "@/public/picture/44/sub1.jpg";
 import sub45 from "@/public/picture/45/sub1.jpg";
 import sub46 from "@/public/picture/46/sub1.jpg";
+import sub47 from "@/public/picture/47/sub1.jpg";
 
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
@@ -143,6 +145,8 @@ import interview43 from "@/public/interview/43.json";
 import interview44 from "@/public/interview/44.json";
 import interview45 from "@/public/interview/45.json";
 import interview46 from "@/public/interview/46.json";
+import interview47 from "@/public/interview/47.json";
+
 import { StaticImageData } from "next/image";
 
 type StaticPhoto = {
@@ -636,5 +640,15 @@ export const interviews: Interview[] = [
     photographer: ["hdoo"],
     photos: { main: main46, sub: [sub46] },
     content: interview46,
+  },
+  {
+    id: 47,
+    title: "네덜란드에서 살아남기",
+    date: new Date("2023-12-19"),
+    interviewer: ["swang, yeju"],
+    interviewee: ["eucho"],
+    photographer: ["jisokang"],
+    photos: { main: main47, sub: [sub47] },
+    content: interview47,
   },
 ];
