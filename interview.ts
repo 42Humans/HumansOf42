@@ -661,6 +661,7 @@ export const interviews: Interview[] = [
     interviewer: ["soohkang, hdoo"],
     interviewee: ["jmaing"],
     photographer: ["hdoo"],
+    editor: ["hhwang"],
     photos: { main: main48, sub: [sub48] },
     content: interview48,
   },
