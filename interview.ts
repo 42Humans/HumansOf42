@@ -45,6 +45,7 @@ import main44 from "@/public/picture/44/main.jpg";
 import main45 from "@/public/picture/45/main.jpg";
 import main46 from "@/public/picture/46/main.jpg";
 import main47 from "@/public/picture/47/main.jpg";
+import main48 from "@/public/picture/48/main.jpg";
 
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
@@ -98,6 +99,7 @@ import sub44 from "@/public/picture/44/sub1.jpg";
 import sub45 from "@/public/picture/45/sub1.jpg";
 import sub46 from "@/public/picture/46/sub1.jpg";
 import sub47 from "@/public/picture/47/sub1.jpg";
+import sub48 from "@/public/picture/48/sub1.jpg";
 
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
@@ -146,6 +148,7 @@ import interview44 from "@/public/interview/44.json";
 import interview45 from "@/public/interview/45.json";
 import interview46 from "@/public/interview/46.json";
 import interview47 from "@/public/interview/47.json";
+import interview48 from "@/public/interview/48.json";
 
 import { StaticImageData } from "next/image";
 
@@ -650,5 +653,15 @@ export const interviews: Interview[] = [
     photographer: ["jisokang"],
     photos: { main: main47, sub: [sub47] },
     content: interview47,
+  },
+  {
+    id: 48,
+    title: "예쁜 것을 좋아해요",
+    date: new Date("2023-12-27"),
+    interviewer: ["soohkang, hdoo"],
+    interviewee: ["jmaing"],
+    photographer: ["hdoo"],
+    photos: { main: main48, sub: [sub48] },
+    content: interview48,
   },
 ];
