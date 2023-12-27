@@ -100,6 +100,7 @@ import sub45 from "@/public/picture/45/sub1.jpg";
 import sub46 from "@/public/picture/46/sub1.jpg";
 import sub47 from "@/public/picture/47/sub1.jpg";
 import sub48 from "@/public/picture/48/sub1.jpg";
+import sub48_2 from "@/public/picture/48/sub2.jpg";
 
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
@@ -654,14 +655,15 @@ export const interviews: Interview[] = [
     photos: { main: main47, sub: [sub47] },
     content: interview47,
   },
-  // {
-  //   id: 48,
-  //   title: "예쁜 것을 좋아해요",
-  //   date: new Date("2023-12-27"),
-  //   interviewer: ["soohkang, hdoo"],
-  //   interviewee: ["jmaing"],
-  //   photographer: ["hdoo"],
-  //   editor: ["hhwang"],
-  //   photos: { main: main48, sub: [sub48] },
-  //   content: interview48, },
+  {
+    id: 48,
+    title: "예쁜 것을 좋아해요",
+    date: new Date("2023-12-27"),
+    interviewer: ["soohkang, hdoo"],
+    interviewee: ["jmaing"],
+    photographer: ["hdoo"],
+    editor: ["hhwang"],
+    photos: { main: main48, sub: [sub48, sub48_2] },
+    content: interview48,
+  },
 ];
