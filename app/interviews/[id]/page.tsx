@@ -56,7 +56,7 @@ export default function InterviewPage({
         {interview_meta.title}
       </h1>
       <h1 className="text-lg w-full flex justify-center p-2 italic">
-        {interview_meta.interviewee}의 이야기
+        {interview_meta.interviewee.join(", ")}의 이야기
       </h1>
       <h1 className="p-2 text-sm w-full flex justify-center">
         {interview_meta.date.toISOString().slice(0, 10)}
