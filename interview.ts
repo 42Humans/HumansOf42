@@ -674,7 +674,7 @@ export const interviews: Interview[] = [
     id: 49,
     title: "42 from scratch",
     date: new Date("2024-02-03"),
-    interviewer: ["seojilee", "mypark"],
+    interviewer: ["seojilee", "minkim3"],
     interviewee: ["cjeon", "mypark"],
     photographer: ["hdoo"],
     editor: ["hhwang", "jiwahn"],
