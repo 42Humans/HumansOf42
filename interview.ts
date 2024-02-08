@@ -46,6 +46,7 @@ import main45 from "@/public/picture/45/main.jpg";
 import main46 from "@/public/picture/46/main.jpg";
 import main47 from "@/public/picture/47/main.jpg";
 import main48 from "@/public/picture/48/main.jpg";
+import main49 from "@/public/picture/49/main.jpg";
 
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
@@ -101,6 +102,8 @@ import sub46 from "@/public/picture/46/sub1.jpg";
 import sub47 from "@/public/picture/47/sub1.jpg";
 import sub48 from "@/public/picture/48/sub1.jpg";
 import sub48_2 from "@/public/picture/48/sub2.jpg";
+import sub49 from "@/public/picture/49/sub1.jpg";
+import sub49_2 from "@/public/picture/49/sub2.jpg";
 
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
@@ -150,6 +153,7 @@ import interview45 from "@/public/interview/45.json";
 import interview46 from "@/public/interview/46.json";
 import interview47 from "@/public/interview/47.json";
 import interview48 from "@/public/interview/48.json";
+import interview49 from "@/public/interview/49.json";
 
 import { StaticImageData } from "next/image";
 
@@ -665,5 +669,16 @@ export const interviews: Interview[] = [
     editor: ["hhwang"],
     photos: { main: main48, sub: [sub48, sub48_2] },
     content: interview48,
+  },
+  {
+    id: 49,
+    title: "42 from scratch",
+    date: new Date("2024-02-03"),
+    interviewer: ["seojilee", "mypark"],
+    interviewee: ["cjeon", "mypark"],
+    photographer: ["hdoo"],
+    editor: ["hhwang", "jiwahn"],
+    photos: { main: main49, sub: [sub49, sub49_2] },
+    content: interview49,
   },
 ];
