@@ -47,6 +47,7 @@ import main46 from "@/public/picture/46/main.jpg";
 import main47 from "@/public/picture/47/main.jpg";
 import main48 from "@/public/picture/48/main.jpg";
 import main49 from "@/public/picture/49/main.jpg";
+import main50 from "@/public/picture/50/main.jpg";
 
 import sub1 from "@/public/picture/1/sub1.jpg";
 import sub2 from "@/public/picture/2/sub1.jpg";
@@ -104,6 +105,8 @@ import sub48 from "@/public/picture/48/sub1.jpg";
 import sub48_2 from "@/public/picture/48/sub2.jpg";
 import sub49 from "@/public/picture/49/sub1.jpg";
 import sub49_2 from "@/public/picture/49/sub2.jpg";
+import sub50 from "@/public/picture/50/sub1.jpg";
+import sub50_2 from "@/public/picture/50/sub2.jpg";
 
 import interview1 from "@/public/interview/1.json";
 import interview2 from "@/public/interview/2.json";
@@ -154,6 +157,7 @@ import interview46 from "@/public/interview/46.json";
 import interview47 from "@/public/interview/47.json";
 import interview48 from "@/public/interview/48.json";
 import interview49 from "@/public/interview/49.json";
+import interview50 from "@/public/interview/50.json";
 
 import { StaticImageData } from "next/image";
 
@@ -680,5 +684,16 @@ export const interviews: Interview[] = [
     editor: ["hhwang", "jiwahn"],
     photos: { main: main49, sub: [sub49, sub49_2] },
     content: interview49,
+  },
+  {
+    id: 50,
+    title: "코딩이 싫지는 않았어요",
+    date: new Date("2024-05-26"),
+    interviewer: ["hdoo"],
+    interviewee: ["jaham"],
+    photographer: ["hdoo"],
+    editor: ["jiwahn"],
+    photos: { main: main50, sub: [sub50, sub50_2] },
+    content: interview50,
   },
 ];
